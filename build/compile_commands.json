@@ -1,0 +1,92 @@
+[
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\MyQtApp_autogen\\mocs_compilation.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\build\\MyQtApp_autogen\\mocs_compilation.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\main.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\main.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/main.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/main.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\mainwindow.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\mainwindow.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QGifPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QGifPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QICNSPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QICNSPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QICOPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QICOPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QJpegPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QJpegPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QSvgIconPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QSvgIconPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QSvgPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QSvgPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QTgaPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QTgaPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QTiffPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QTiffPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWbmpPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWbmpPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWebpPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWebpPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWindowsIntegrationPlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Gui\\Qt5Gui_QWindowsIntegrationPlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin_Import.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "H:\\MSYS2\\mingw64\\bin\\clang++.exe -DQT_ACCESSIBILITY_SUPPORT_LIB -DQT_CORE_LIB -DQT_EVENTDISPATCHER_SUPPORT_LIB -DQT_FONTDATABASE_SUPPORT_LIB -DQT_GUI_LIB -DQT_SVG_LIB -DQT_THEME_SUPPORT_LIB -DQT_VULKAN_SUPPORT_LIB -DQT_WIDGETS_LIB -DQT_WINDOWSUIAUTOMATION_SUPPORT_LIB @CMakeFiles\\MyQtApp.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\H_\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Widgets\\Qt5Widgets_QWindowsVistaStylePlugin_Import.cpp.obj -c H:\\MSYS2\\mingw64\\qt5-static\\lib\\cmake\\Qt5Widgets\\Qt5Widgets_QWindowsVistaStylePlugin_Import.cpp",
+  "file": "H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin_Import.cpp",
+  "output": "CMakeFiles/MyQtApp.dir/H_/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin_Import.cpp.obj"
+}
+]

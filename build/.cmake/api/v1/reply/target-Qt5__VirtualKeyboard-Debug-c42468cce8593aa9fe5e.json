@@ -1,0 +1,498 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "H:/MSYS2/mingw64/qt5-static/lib/libQt5VirtualKeyboard.a"
+		}
+	],
+	"backtrace" : 11,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package",
+			"include",
+			"set_property",
+			"_populate_VirtualKeyboard_target_properties"
+		],
+		"files" : 
+		[
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboardConfig.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5/Qt5Config.cmake",
+			"CMakeLists.txt",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboard_QtVirtualKeyboardHangulPlugin.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboard_QtVirtualKeyboardOpenWnnPlugin.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboard_QtVirtualKeyboardPinyinPlugin.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboard_QtVirtualKeyboardTCImePlugin.cmake",
+			"H:/MSYS2/mingw64/qt5-static/lib/cmake/Qt5VirtualKeyboard/Qt5VirtualKeyboard_QtVirtualKeyboardThaiPlugin.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 28,
+				"parent" : 2
+			},
+			{
+				"file" : 3,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 226,
+				"parent" : 4
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 404,
+				"parent" : 6
+			},
+			{
+				"file" : 1,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 8
+			},
+			{
+				"file" : 0,
+				"parent" : 9
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 279,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 338,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 341,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 404,
+				"parent" : 10
+			},
+			{
+				"file" : 6,
+				"parent" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 71,
+				"parent" : 18
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 404,
+				"parent" : 10
+			},
+			{
+				"file" : 7,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 71,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 404,
+				"parent" : 10
+			},
+			{
+				"file" : 8,
+				"parent" : 23
+			},
+			{
+				"command" : 3,
+				"file" : 8,
+				"line" : 71,
+				"parent" : 24
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 404,
+				"parent" : 10
+			},
+			{
+				"file" : 9,
+				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 9,
+				"line" : 71,
+				"parent" : 27
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 404,
+				"parent" : 10
+			},
+			{
+				"file" : 10,
+				"parent" : 29
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 71,
+				"parent" : 30
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"id" : "Qt5::VirtualKeyboard::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Quick::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Gui::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Core::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Quick::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Gui::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Core::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "Qt5::QtVirtualKeyboardHangulPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "Qt5::QtVirtualKeyboardOpenWnnPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Qt5::QtVirtualKeyboardPinyinPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Qt5::QtVirtualKeyboardTCImePlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Qt5::QtVirtualKeyboardThaiPlugin::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Quick::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Gui::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Qt5::Core::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5Quick.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5Gui.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libd3d11.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libdxgi.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libdxguid.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libqtlibpng.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libqtharfbuzz.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libcomdlg32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/liboleaut32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libimm32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libglu32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libopengl32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5QmlModels.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5Qml.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5Network.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libdnsapi.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libiphlpapi.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libssl.dll.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libcrypto.dll.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libgdi32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libcrypt32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libQt5Core.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libmpr.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libuserenv.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libversion.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libz.dll.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/qt5-static/lib//libqtpcre2.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libzstd.dll.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libnetapi32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libws2_32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libadvapi32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libkernel32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libole32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libshell32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libuuid.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libuser32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libwinmm.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libglu32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libopengl32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libgdi32.a"
+		},
+		{
+			"backtrace" : 14,
+			"fragment" : "H:/MSYS2/mingw64/lib/libuser32.a"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Quick::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Gui::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Qml::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Qt5::Core::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "Qt5::QtVirtualKeyboardHangulPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "Qt5::QtVirtualKeyboardOpenWnnPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Qt5::QtVirtualKeyboardPinyinPlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Qt5::QtVirtualKeyboardTCImePlugin::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Qt5::QtVirtualKeyboardThaiPlugin::@6890427a1f51a3e7e1df"
+		}
+	],
+	"local" : true,
+	"name" : "Qt5::VirtualKeyboard",
+	"nameOnDisk" : "libQt5VirtualKeyboard.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "STATIC_LIBRARY"
+}
