@@ -1,0 +1,9 @@
+# ninja log v7
+4	2359	8077470081544666	MyQtApp_autogen/timestamp	b0306a10f143720d
+4	2359	8077470081544666	MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+4	2359	8077470081544666	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/timestamp	b0306a10f143720d
+4	2359	8077470081544666	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+2363	3720	8077470082067582	CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj	dd0861bc4b72c037
+2368	3815	8077470082118974	CMakeFiles/MyQtApp.dir/main.cpp.obj	aa04946fc1002de4
+2373	3866	8077470082167449	CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj	b7249b694bc69676
+3866	4099	8077470097095964	MyQtApp.exe	84f3c7f2689e3801

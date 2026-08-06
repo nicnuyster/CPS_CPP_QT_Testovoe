@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM.md",
+                "file": "TechStack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LLM"
+              "title": "TechStack"
             }
           }
         ],
@@ -203,8 +203,9 @@
   },
   "active": "424e778ff3e8dc63",
   "lastOpenFiles": [
-    "TODO.md",
     "LLM.md",
+    "TechStack.md",
+    "TODO.md",
     "БД архитектура/БД.md",
     "Задание.md",
     "General архитектура.md",
