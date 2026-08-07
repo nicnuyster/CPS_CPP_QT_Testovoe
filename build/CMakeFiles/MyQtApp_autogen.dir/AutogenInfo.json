@@ -62,9 +62,6 @@
 		"C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
 		"H:/cmake/share/cmake-4.4/Modules/CMakeParseArguments.cmake",
-		"C:/msys64/mingw64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
-		"C:/msys64/mingw64/lib/cmake/Qt5/Qt5Config.cmake",
-		"C:/msys64/mingw64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
@@ -73,7 +70,9 @@
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QODBCDriverPlugin.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake",
-		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake"
+		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake",
+		"C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "H:/GitHub/CPS_CPP_QT_Testovoe",
 	"CROSS_CONFIG" : false,
@@ -82,15 +81,15 @@
 	"HEADERS" : 
 	[
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/db.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h",
 			"MU",
-			"EWIEGA46WW/moc_db.cpp",
+			"RLKJE3IM4Y/moc_db.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
+			"YPKJ5OE7LN/moc_mainwindow.cpp",
 			null
 		]
 	],
@@ -144,9 +143,9 @@
 	"SETTINGS_FILE" : "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "H:/GitHub/CPS_CPP_QT_Testovoe/db.cpp", "MU", null ],
-		[ "H:/GitHub/CPS_CPP_QT_Testovoe/main.cpp", "MU", null ],
-		[ "H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.cpp", "MU", null ]
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp", "MU", null ],
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp", "MU", null ],
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -343,11 +343,11 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/4.4.2/CMakeRCCompiler.cmake \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/4.4.2/CMakeSystem.cmake \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/db.cpp \
-	H:/GitHub/CPS_CPP_QT_Testovoe/db.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/main.cpp \
-	H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.cpp \
-	H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h \
 	H:/cmake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake \
 	H:/cmake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake \
 	H:/cmake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake \
@@ -374,5 +374,5 @@ MyQtApp_autogen/timestamp: \
 	H:/cmake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake \
 	H:/cmake/share/cmake-4.4/Modules/Platform/Windows.cmake \
 	H:/cmake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake \
-	H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.ui \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.ui \
 	H:/cmake/bin/cmake.exe

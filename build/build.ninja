@@ -59,34 +59,34 @@ build CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj: CXX_COMPI
   OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\MyQtApp_autogen
   TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
 
-build CMakeFiles/MyQtApp.dir/main.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/main.cpp || cmake_object_order_depends_target_MyQtApp
+build CMakeFiles/MyQtApp.dir/src/main.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp || cmake_object_order_depends_target_MyQtApp
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles\MyQtApp.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\MyQtApp.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql
   OBJECT_DIR = CMakeFiles\MyQtApp.dir
-  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\src
   TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
 
-build CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.cpp || cmake_object_order_depends_target_MyQtApp
+build CMakeFiles/MyQtApp.dir/src/db/db.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp || cmake_object_order_depends_target_MyQtApp
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles\MyQtApp.dir\mainwindow.cpp.obj.d
+  DEP_FILE = CMakeFiles\MyQtApp.dir\src\db\db.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql
   OBJECT_DIR = CMakeFiles\MyQtApp.dir
-  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\src\db
   TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
 
-build CMakeFiles/MyQtApp.dir/db.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/db.cpp || cmake_object_order_depends_target_MyQtApp
+build CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp || cmake_object_order_depends_target_MyQtApp
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles\MyQtApp.dir\db.cpp.obj.d
+  DEP_FILE = CMakeFiles\MyQtApp.dir\src\ui\mainwindow.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql
   OBJECT_DIR = CMakeFiles\MyQtApp.dir
-  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\src\ui
   TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
 
 
@@ -97,7 +97,7 @@ build CMakeFiles/MyQtApp.dir/db.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H
 #############################################
 # Link the executable MyQtApp.exe
 
-build MyQtApp.exe: CXX_EXECUTABLE_LINKER__MyQtApp_Debug CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj CMakeFiles/MyQtApp.dir/main.cpp.obj CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj CMakeFiles/MyQtApp.dir/db.cpp.obj | C$:/msys64/mingw64/lib/libQt5Widgets.dll.a C$:/msys64/mingw64/lib/libQt5Sql.dll.a C$:/msys64/mingw64/lib/libQt5Gui.dll.a C$:/msys64/mingw64/lib/libQt5Core.dll.a || MyQtApp_autogen MyQtApp_autogen_timestamp_deps
+build MyQtApp.exe: CXX_EXECUTABLE_LINKER__MyQtApp_Debug CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj CMakeFiles/MyQtApp.dir/src/main.cpp.obj CMakeFiles/MyQtApp.dir/src/db/db.cpp.obj CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj | C$:/msys64/mingw64/lib/libQt5Widgets.dll.a C$:/msys64/mingw64/lib/libQt5Sql.dll.a C$:/msys64/mingw64/lib/libQt5Gui.dll.a C$:/msys64/mingw64/lib/libQt5Core.dll.a || MyQtApp_autogen MyQtApp_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/msys64/mingw64/lib/libQt5Widgets.dll.a  C:/msys64/mingw64/lib/libQt5Sql.dll.a  C:/msys64/mingw64/lib/libQt5Gui.dll.a  C:/msys64/mingw64/lib/libQt5Core.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -143,7 +143,7 @@ build MyQtApp_autogen_timestamp_deps: phony
 #############################################
 # Utility command for MyQtApp_autogen
 
-build MyQtApp_autogen: phony CMakeFiles/MyQtApp_autogen MyQtApp_autogen/include/ui_mainwindow.h MyQtApp_autogen/timestamp MyQtApp_autogen/mocs_compilation.cpp MyQtApp_autogen_timestamp_deps
+build MyQtApp_autogen: phony CMakeFiles/MyQtApp_autogen MyQtApp_autogen/include/src/ui/ui_mainwindow.h MyQtApp_autogen/timestamp MyQtApp_autogen/mocs_compilation.cpp MyQtApp_autogen_timestamp_deps
 
 
 #############################################
@@ -160,7 +160,7 @@ build MyQtApp_autogen/timestamp MyQtApp_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles\MyQtApp_autogen
 
-build CMakeFiles/MyQtApp_autogen MyQtApp_autogen/include/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/MyQtApp_autogen ${cmake_ninja_workdir}MyQtApp_autogen/include/ui_mainwindow.h: phony MyQtApp_autogen/timestamp || MyQtApp_autogen_timestamp_deps
+build CMakeFiles/MyQtApp_autogen MyQtApp_autogen/include/src/ui/ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles/MyQtApp_autogen ${cmake_ninja_workdir}MyQtApp_autogen/include/src/ui/ui_mainwindow.h: phony MyQtApp_autogen/timestamp || MyQtApp_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

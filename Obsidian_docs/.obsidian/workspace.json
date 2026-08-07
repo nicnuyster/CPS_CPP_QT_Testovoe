@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TechStack.md",
+                "file": "QT архитектура/QT архитектура.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TechStack"
+              "title": "QT архитектура"
             }
           }
         ],
@@ -203,13 +203,13 @@
   },
   "active": "424e778ff3e8dc63",
   "lastOpenFiles": [
-    "LLM.md",
-    "TechStack.md",
-    "TODO.md",
     "БД архитектура/БД.md",
+    "QT архитектура/QT архитектура.md",
+    "TechStack.md",
+    "LLM.md",
+    "TODO.md",
     "Задание.md",
     "General архитектура.md",
-    "QT архитектура/QT архитектура.md",
     "QT архитектура",
     "Без названия.base",
     "БД архитектура"
