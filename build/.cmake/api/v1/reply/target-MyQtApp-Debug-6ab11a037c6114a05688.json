@@ -182,11 +182,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "MyQtApp::@6890427a1f51a3e7e1df",
@@ -248,14 +248,14 @@
 			"id" : "Qt5::moc::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "Qt5::uic::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Qt5::uic::@6890427a1f51a3e7e1df"
+			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
