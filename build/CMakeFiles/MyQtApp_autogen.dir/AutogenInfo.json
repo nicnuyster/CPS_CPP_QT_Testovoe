@@ -82,6 +82,12 @@
 	"HEADERS" : 
 	[
 		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/db.h",
+			"MU",
+			"EWIEGA46WW/moc_db.cpp",
+			null
+		],
+		[
 			"H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -138,6 +144,7 @@
 	"SETTINGS_FILE" : "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/db.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/main.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/mainwindow.cpp", "MU", null ]
 	],

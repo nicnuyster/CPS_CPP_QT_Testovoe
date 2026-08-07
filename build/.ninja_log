@@ -1,9 +1,19 @@
 # ninja log v7
-4	2359	8077470081544666	MyQtApp_autogen/timestamp	b0306a10f143720d
-4	2359	8077470081544666	MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
-4	2359	8077470081544666	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/timestamp	b0306a10f143720d
-4	2359	8077470081544666	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+27	150	8078196608920671	MyQtApp_autogen/timestamp	b0306a10f143720d
+27	150	8078196608920671	MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+27	150	8078196608920671	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/timestamp	b0306a10f143720d
+27	150	8078196608920671	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
 2363	3720	8077470082067582	CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj	dd0861bc4b72c037
-2368	3815	8077470082118974	CMakeFiles/MyQtApp.dir/main.cpp.obj	aa04946fc1002de4
-2373	3866	8077470082167449	CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj	b7249b694bc69676
-3866	4099	8077470097095964	MyQtApp.exe	84f3c7f2689e3801
+151	1437	8078182869087468	CMakeFiles/MyQtApp.dir/main.cpp.obj	aa04946fc1002de4
+150	1349	8078196610096852	CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj	b7249b694bc69676
+1349	1501	8078196622124020	MyQtApp.exe	b6ed2b0889010f93
+167	812	8078076432668433	CMakeFiles/MyQtApp.dir/Database.cpp.obj	a8ff5f847a3ef5fd
+164	244	8078156257190292	CMakeFiles/MyQtApp.dir/SimpleConnection.cpp.obj	2733a4bb086a5752
+155	1176	8078196610160284	CMakeFiles/MyQtApp.dir/db.cpp.obj	2395a55d15df9347
+58	236	8078210925738025	MyQtApp_autogen/timestamp	b0306a10f143720d
+58	236	8078210925738025	MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+58	236	8078210925738025	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/timestamp	b0306a10f143720d
+58	236	8078210925738025	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+329	3607	8078210928448797	CMakeFiles/MyQtApp.dir/db.cpp.obj	2395a55d15df9347
+236	4130	8078210927517611	CMakeFiles/MyQtApp.dir/mainwindow.cpp.obj	b7249b694bc69676
+4130	4881	8078210966452918	MyQtApp.exe	b6ed2b0889010f93

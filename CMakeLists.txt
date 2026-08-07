@@ -17,6 +17,8 @@ add_executable(MyQtApp
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    db.cpp
+    db.h
 )
 
 target_link_libraries(MyQtApp PRIVATE Qt5::Widgets)

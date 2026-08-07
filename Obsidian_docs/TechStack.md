@@ -1,5 +1,7 @@
 Cmake: 4.4.2
 C++: 17
-g++: 16.1.0
-PostgreSQL: 67
-Qt: 
+Ninja:
+g++: 
+PostgreSQL: 9.6.24
+Qt: 5.19.4???
+IDE: VSCode
