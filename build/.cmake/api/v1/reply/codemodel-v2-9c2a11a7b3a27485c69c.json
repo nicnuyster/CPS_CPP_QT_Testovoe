@@ -412,7 +412,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MyQtApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MyQtApp-Debug-99081fc530c6b7bea43f.json",
+					"jsonFile" : "target-MyQtApp-Debug-8216347c5e5d232bf759.json",
 					"name" : "MyQtApp",
 					"projectIndex" : 0
 				},
@@ -426,7 +426,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MyQtApp_autogen_timestamp_deps-Debug-e1f9f3fcea1c50f8857c.json",
+					"jsonFile" : "target-MyQtApp_autogen_timestamp_deps-Debug-cc65e36e980b6b7dfea6.json",
 					"name" : "MyQtApp_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}

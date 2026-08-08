@@ -93,6 +93,42 @@
 			null
 		],
 		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/appointments.h",
+			"MU",
+			"INXXH35QHW/moc_appointments.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor.h",
+			"MU",
+			"INXXH35QHW/moc_doctor.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor_speciality.h",
+			"MU",
+			"INXXH35QHW/moc_doctor_speciality.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/patient.h",
+			"MU",
+			"INXXH35QHW/moc_patient.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/speciality.h",
+			"MU",
+			"INXXH35QHW/moc_speciality.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/table_enums.h",
+			"MU",
+			"INXXH35QHW/moc_table_enums.cpp",
+			null
+		],
+		[
 			"H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h",
 			"MU",
 			"YPKJ5OE7LN/moc_mainwindow.cpp",

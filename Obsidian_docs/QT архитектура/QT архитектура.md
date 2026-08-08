@@ -12,7 +12,7 @@ app/
  application.h
  
 db/
-	models/ классы данных Доктор, кабинеты и т.п. 
+	models/ классы данных Доктор, кабинеты и т.п. [[models]]
 	repos/ чистые sql транзакции
 	servises/ оркестратор и "бизнес логика"
 	controllers/ UI к сервисам

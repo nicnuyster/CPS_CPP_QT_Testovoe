@@ -1,4 +1,5 @@
 MyQtApp_autogen/timestamp: \
+	C:/msys64/mingw64/include/QtCore/QObject \
 	C:/msys64/mingw64/include/QtCore/qalgorithms.h \
 	C:/msys64/mingw64/include/QtCore/qarraydata.h \
 	C:/msys64/mingw64/include/QtCore/qatomic.h \
@@ -357,6 +358,12 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/appointments.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor_speciality.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/patient.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/speciality.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/table_enums.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h \

@@ -40,6 +40,15 @@ set(HEADERS
     #app
     src/app/application.h
     
+    #bd
+    #models
+    src/db/models/appointments.h
+    src/db/models/doctor_speciality.h
+    src/db/models/doctor.h
+    src/db/models/patient.h
+    src/db/models/speciality.h
+    src/db/models/table_enums.h
+
     src/db/db.h
 )
 

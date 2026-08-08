@@ -13,7 +13,7 @@ class Application : public QApplication
     Q_OBJECT
 
 public:
-    Application(int &argc, char **argv);    /*создание*/
+    Application(int &argc, char **argv);
 
 private:
     MainWindow mainWindow;

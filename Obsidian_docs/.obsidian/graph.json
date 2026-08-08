@@ -8,10 +8,10 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:БД  ",
+      "query": "path:\"БД архитектура/бд\"  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 16731469
       }
     },
     {
@@ -19,6 +19,20 @@
       "color": {
         "a": 1,
         "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"БД архитектура/таблицы\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 13836905
+      }
+    },
+    {
+      "query": "file: Задание",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
       }
     }
   ],

@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 52,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 59,
+				"line" : 68,
 				"parent" : 0
 			}
 		]
@@ -145,11 +145,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
+			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "MyQtApp::@6890427a1f51a3e7e1df",
@@ -218,11 +218,11 @@
 			"id" : "Qt5::uic::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
+			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "MyQtApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "MyQtApp_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -250,22 +250,28 @@
 				5,
 				6,
 				7,
-				9
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				15
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				8,
-				10
+				14,
+				16
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				11
+				17
 			]
 		}
 	],
@@ -338,6 +344,60 @@
 				1
 			],
 			"path" : "src/app/application.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/appointments.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/doctor_speciality.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/doctor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/patient.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/speciality.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"backtraces" : 
+			[
+				1
+			],
+			"path" : "src/db/models/table_enums.h",
 			"sourceGroupIndex" : 1
 		},
 		{
