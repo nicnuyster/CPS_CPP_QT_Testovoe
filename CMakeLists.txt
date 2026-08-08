@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(MyQtApp VERSION 1.0 LANGUAGES CXX)
+project(MyQtApp 
+    VERSION 1.0 
+    LANGUAGES CXX
+    )
 
 # -- --
 set(CMAKE_CXX_STANDARD 17)
@@ -22,6 +25,9 @@ find_package(Qt5 REQUIRED COMPONENTS
 set(SOURCES
     src/main.cpp
 
+    #app
+    src/app/application.cpp
+
     src/db/db.cpp
 
     src/ui/mainwindow.cpp
@@ -30,6 +36,10 @@ set(SOURCES
 # -- --
 set(HEADERS
     src/ui/mainwindow.h
+    
+    #app
+    src/app/application.h
+    
     src/db/db.h
 )
 

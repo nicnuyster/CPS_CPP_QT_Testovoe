@@ -81,6 +81,12 @@
 	"HEADERS" : 
 	[
 		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h",
+			"MU",
+			"ISMKEKEPX5/moc_application.cpp",
+			null
+		],
+		[
 			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h",
 			"MU",
 			"RLKJE3IM4Y/moc_db.cpp",
@@ -143,6 +149,7 @@
 	"SETTINGS_FILE" : "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp", "MU", null ]

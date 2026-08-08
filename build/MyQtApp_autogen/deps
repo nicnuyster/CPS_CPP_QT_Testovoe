@@ -11,7 +11,10 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qconfig.h \
 	C:/msys64/mingw64/include/QtCore/qcontainerfwd.h \
 	C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h \
+	C:/msys64/mingw64/include/QtCore/qcoreapplication.h \
+	C:/msys64/mingw64/include/QtCore/qcoreevent.h \
 	C:/msys64/mingw64/include/QtCore/qdatastream.h \
+	C:/msys64/mingw64/include/QtCore/qeventloop.h \
 	C:/msys64/mingw64/include/QtCore/qflags.h \
 	C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
 	C:/msys64/mingw64/include/QtCore/qglobal.h \
@@ -22,7 +25,9 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qiterator.h \
 	C:/msys64/mingw64/include/QtCore/qline.h \
 	C:/msys64/mingw64/include/QtCore/qlist.h \
+	C:/msys64/mingw64/include/QtCore/qlocale.h \
 	C:/msys64/mingw64/include/QtCore/qlogging.h \
+	C:/msys64/mingw64/include/QtCore/qmap.h \
 	C:/msys64/mingw64/include/QtCore/qmargins.h \
 	C:/msys64/mingw64/include/QtCore/qmetatype.h \
 	C:/msys64/mingw64/include/QtCore/qnamespace.h \
@@ -52,6 +57,7 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qsystemdetection.h \
 	C:/msys64/mingw64/include/QtCore/qtcore-config.h \
 	C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
+	C:/msys64/mingw64/include/QtCore/qvariant.h \
 	C:/msys64/mingw64/include/QtCore/qvarlengtharray.h \
 	C:/msys64/mingw64/include/QtCore/qvector.h \
 	C:/msys64/mingw64/include/QtCore/qversiontagging.h \
@@ -61,8 +67,10 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtGui/qfont.h \
 	C:/msys64/mingw64/include/QtGui/qfontinfo.h \
 	C:/msys64/mingw64/include/QtGui/qfontmetrics.h \
+	C:/msys64/mingw64/include/QtGui/qguiapplication.h \
 	C:/msys64/mingw64/include/QtGui/qicon.h \
 	C:/msys64/mingw64/include/QtGui/qimage.h \
+	C:/msys64/mingw64/include/QtGui/qinputmethod.h \
 	C:/msys64/mingw64/include/QtGui/qkeysequence.h \
 	C:/msys64/mingw64/include/QtGui/qmatrix.h \
 	C:/msys64/mingw64/include/QtGui/qpaintdevice.h \
@@ -78,7 +86,9 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtGui/qtransform.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
+	C:/msys64/mingw64/include/QtWidgets/QApplication \
 	C:/msys64/mingw64/include/QtWidgets/QMainWindow \
+	C:/msys64/mingw64/include/QtWidgets/qapplication.h \
 	C:/msys64/mingw64/include/QtWidgets/qmainwindow.h \
 	C:/msys64/mingw64/include/QtWidgets/qsizepolicy.h \
 	C:/msys64/mingw64/include/QtWidgets/qtabwidget.h \
@@ -343,6 +353,8 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/4.4.2/CMakeRCCompiler.cmake \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/4.4.2/CMakeSystem.cmake \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp \
