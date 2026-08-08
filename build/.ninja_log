@@ -44,3 +44,12 @@
 165	1363	8078860053309089	CMakeFiles/MyQtApp.dir/src/main.cpp.obj	8605f6f04d6570f1
 170	1371	8078860053309089	CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj	d0da6b0cd8d12086
 1371	1561	8078860065388976	MyQtApp.exe	18ee656ceafb2831
+10	543	8078887567603730	MyQtApp_autogen/timestamp	b0306a10f143720d
+10	543	8078887567603730	MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+10	543	8078887567603730	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/timestamp	b0306a10f143720d
+10	543	8078887567603730	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp	b0306a10f143720d
+559	2008	8078887568280829	CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj	d0da6b0cd8d12086
+553	2037	8078887568224160	CMakeFiles/MyQtApp.dir/src/main.cpp.obj	8605f6f04d6570f1
+565	2049	8078887568280829	CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj	c2c416b1ff67397d
+544	2056	8078887568144123	CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj	dd0861bc4b72c037
+2056	2426	8078887583261020	MyQtApp.exe	18ee656ceafb2831

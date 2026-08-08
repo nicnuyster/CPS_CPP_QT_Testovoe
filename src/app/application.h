@@ -14,10 +14,9 @@ class Application : public QApplication
 
 public:
     Application(int &argc, char **argv);    /*создание*/
-    ~Application();                         /*удаление*/
 
 private:
-    MainWindow *mainWindow;
+    MainWindow mainWindow;
 };
 
 #endif // APPLICATION_H

@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "path:\"QT архитектура\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
     }
   ],
   "collapse-display": true,
@@ -26,5 +33,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1,
-  "close": false
+  "close": true
 }

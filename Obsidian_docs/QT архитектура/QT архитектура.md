@@ -3,11 +3,11 @@ build/
 obsidian_docks/
 
 cmake.txt
-src/
+
 main.h
 main.cpp
 
-app/ все сюда
+app/
  application.cpp
  application.h
  
