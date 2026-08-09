@@ -11,7 +11,7 @@ app/
  application.cpp
  application.h
  
-db/
+db/ [[embeddingdb]]
 	models/ классы данных Доктор, кабинеты и т.п. [[models]]
 	repos/ чистые sql транзакции
 	servises/ оркестратор и "бизнес логика"

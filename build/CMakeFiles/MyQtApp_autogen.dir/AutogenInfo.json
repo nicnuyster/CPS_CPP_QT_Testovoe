@@ -72,7 +72,10 @@
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake",
 		"C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
-		"C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake"
+		"C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
+		"C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake",
+		"C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "H:/GitHub/CPS_CPP_QT_Testovoe",
 	"CROSS_CONFIG" : false,
@@ -87,45 +90,57 @@
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h",
 			"MU",
-			"RLKJE3IM4Y/moc_db.cpp",
+			"RLKJE3IM4Y/moc_DatabaseManager.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/appointments.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h",
 			"MU",
-			"INXXH35QHW/moc_appointments.cpp",
+			"RLKJE3IM4Y/moc_PostgresSettings.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h",
 			"MU",
-			"INXXH35QHW/moc_doctor.cpp",
+			"RLKJE3IM4Y/moc_ServerManager.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor_speciality.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Appointments.h",
 			"MU",
-			"INXXH35QHW/moc_doctor_speciality.cpp",
+			"INXXH35QHW/moc_Appointments.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/patient.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Doctor.h",
 			"MU",
-			"INXXH35QHW/moc_patient.cpp",
+			"INXXH35QHW/moc_Doctor.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/speciality.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/DoctorSpeciality.h",
 			"MU",
-			"INXXH35QHW/moc_speciality.cpp",
+			"INXXH35QHW/moc_DoctorSpeciality.cpp",
 			null
 		],
 		[
-			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/table_enums.h",
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Patient.h",
 			"MU",
-			"INXXH35QHW/moc_table_enums.cpp",
+			"INXXH35QHW/moc_Patient.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Speciality.h",
+			"MU",
+			"INXXH35QHW/moc_Speciality.cpp",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h",
+			"MU",
+			"INXXH35QHW/moc_TableEnums.cpp",
 			null
 		],
 		[
@@ -138,7 +153,14 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include",
 	"MOC_COMPILATION_FILE" : "H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -153,6 +175,7 @@
 		"C:/msys64/mingw64/include/QtCore",
 		"C:/msys64/mingw64/share/qt5/mkspecs/win32-g++",
 		"C:/msys64/mingw64/include/QtSql",
+		"C:/msys64/mingw64/include/QtNetwork",
 		"C:/msys64/mingw64/include",
 		"C:/msys64/mingw64/include/c++/16.1.0",
 		"C:/msys64/mingw64/include/c++/16.1.0/x86_64-w64-mingw32",
@@ -186,7 +209,17 @@
 	"SOURCES" : 
 	[
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp", "MU", null ],
-		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp", "MU", null ],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp",
+			"MU",
+			null
+		],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.cpp",
+			"MU",
+			null
+		],
+		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp", "MU", null ],
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp", "MU", null ]
 	],

@@ -1,5 +1,11 @@
 H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.cpp: H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h \
   H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h \
+  C:/msys64/mingw64/include/QtCore/QCoreApplication \
+  C:/msys64/mingw64/include/QtCore/QDir \
+  C:/msys64/mingw64/include/QtCore/QObject \
+  C:/msys64/mingw64/include/QtCore/QProcess \
+  C:/msys64/mingw64/include/QtCore/QSettings \
+  C:/msys64/mingw64/include/QtCore/QString \
   C:/msys64/mingw64/include/QtCore/qalgorithms.h \
   C:/msys64/mingw64/include/QtCore/qarraydata.h \
   C:/msys64/mingw64/include/QtCore/qatomic.h \
@@ -15,7 +21,11 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtCore/qcoreapplication.h \
   C:/msys64/mingw64/include/QtCore/qcoreevent.h \
   C:/msys64/mingw64/include/QtCore/qdatastream.h \
+  C:/msys64/mingw64/include/QtCore/qdir.h \
   C:/msys64/mingw64/include/QtCore/qeventloop.h \
+  C:/msys64/mingw64/include/QtCore/qfile.h \
+  C:/msys64/mingw64/include/QtCore/qfiledevice.h \
+  C:/msys64/mingw64/include/QtCore/qfileinfo.h \
   C:/msys64/mingw64/include/QtCore/qflags.h \
   C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
   C:/msys64/mingw64/include/QtCore/qglobal.h \
@@ -39,11 +49,13 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtCore/qobjectdefs_impl.h \
   C:/msys64/mingw64/include/QtCore/qpair.h \
   C:/msys64/mingw64/include/QtCore/qpoint.h \
+  C:/msys64/mingw64/include/QtCore/qprocess.h \
   C:/msys64/mingw64/include/QtCore/qprocessordetection.h \
   C:/msys64/mingw64/include/QtCore/qrect.h \
   C:/msys64/mingw64/include/QtCore/qrefcount.h \
   C:/msys64/mingw64/include/QtCore/qregexp.h \
   C:/msys64/mingw64/include/QtCore/qscopedpointer.h \
+  C:/msys64/mingw64/include/QtCore/qsettings.h \
   C:/msys64/mingw64/include/QtCore/qshareddata.h \
   C:/msys64/mingw64/include/QtCore/qsharedpointer.h \
   C:/msys64/mingw64/include/QtCore/qsharedpointer_impl.h \
@@ -87,6 +99,10 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtGui/qtransform.h \
   C:/msys64/mingw64/include/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
+  C:/msys64/mingw64/include/QtSql/QSqlDatabase \
+  C:/msys64/mingw64/include/QtSql/qsqldatabase.h \
+  C:/msys64/mingw64/include/QtSql/qtsql-config.h \
+  C:/msys64/mingw64/include/QtSql/qtsqlglobal.h \
   C:/msys64/mingw64/include/QtWidgets/QApplication \
   C:/msys64/mingw64/include/QtWidgets/QMainWindow \
   C:/msys64/mingw64/include/QtWidgets/qapplication.h \
@@ -318,4 +334,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/wchar.h \
   C:/msys64/mingw64/include/wctype.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+  H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h \
+  H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h \
+  H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h \
   H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h

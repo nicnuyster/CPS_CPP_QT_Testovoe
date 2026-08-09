@@ -1,5 +1,10 @@
 MyQtApp_autogen/timestamp: \
+	C:/msys64/mingw64/include/QtCore/QCoreApplication \
+	C:/msys64/mingw64/include/QtCore/QDir \
 	C:/msys64/mingw64/include/QtCore/QObject \
+	C:/msys64/mingw64/include/QtCore/QProcess \
+	C:/msys64/mingw64/include/QtCore/QSettings \
+	C:/msys64/mingw64/include/QtCore/QString \
 	C:/msys64/mingw64/include/QtCore/qalgorithms.h \
 	C:/msys64/mingw64/include/QtCore/qarraydata.h \
 	C:/msys64/mingw64/include/QtCore/qatomic.h \
@@ -15,7 +20,11 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qcoreapplication.h \
 	C:/msys64/mingw64/include/QtCore/qcoreevent.h \
 	C:/msys64/mingw64/include/QtCore/qdatastream.h \
+	C:/msys64/mingw64/include/QtCore/qdir.h \
 	C:/msys64/mingw64/include/QtCore/qeventloop.h \
+	C:/msys64/mingw64/include/QtCore/qfile.h \
+	C:/msys64/mingw64/include/QtCore/qfiledevice.h \
+	C:/msys64/mingw64/include/QtCore/qfileinfo.h \
 	C:/msys64/mingw64/include/QtCore/qflags.h \
 	C:/msys64/mingw64/include/QtCore/qgenericatomic.h \
 	C:/msys64/mingw64/include/QtCore/qglobal.h \
@@ -39,11 +48,13 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qobjectdefs_impl.h \
 	C:/msys64/mingw64/include/QtCore/qpair.h \
 	C:/msys64/mingw64/include/QtCore/qpoint.h \
+	C:/msys64/mingw64/include/QtCore/qprocess.h \
 	C:/msys64/mingw64/include/QtCore/qprocessordetection.h \
 	C:/msys64/mingw64/include/QtCore/qrect.h \
 	C:/msys64/mingw64/include/QtCore/qrefcount.h \
 	C:/msys64/mingw64/include/QtCore/qregexp.h \
 	C:/msys64/mingw64/include/QtCore/qscopedpointer.h \
+	C:/msys64/mingw64/include/QtCore/qsettings.h \
 	C:/msys64/mingw64/include/QtCore/qshareddata.h \
 	C:/msys64/mingw64/include/QtCore/qsharedpointer.h \
 	C:/msys64/mingw64/include/QtCore/qsharedpointer_impl.h \
@@ -87,6 +98,10 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtGui/qtransform.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs.h \
 	C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
+	C:/msys64/mingw64/include/QtSql/QSqlDatabase \
+	C:/msys64/mingw64/include/QtSql/qsqldatabase.h \
+	C:/msys64/mingw64/include/QtSql/qtsql-config.h \
+	C:/msys64/mingw64/include/QtSql/qtsqlglobal.h \
 	C:/msys64/mingw64/include/QtWidgets/QApplication \
 	C:/msys64/mingw64/include/QtWidgets/QMainWindow \
 	C:/msys64/mingw64/include/QtWidgets/qapplication.h \
@@ -336,6 +351,9 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake \
+	C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake \
 	C:/msys64/mingw64/lib/cmake/Qt5Sql/Qt5Sql_QIBaseDriverPlugin.cmake \
@@ -356,14 +374,18 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/appointments.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/doctor_speciality.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/patient.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/speciality.h \
-	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/table_enums.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Appointments.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Doctor.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/DoctorSpeciality.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Patient.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Speciality.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h \

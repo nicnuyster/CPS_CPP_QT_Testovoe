@@ -4,7 +4,7 @@
 #include <QString>
 #include <QDate>
 #include <QDateTime>
-#include "table_enums.h"
+#include "TableEnums.h"
 
 struct Patient {
     int id = 0;
@@ -17,7 +17,7 @@ struct Patient {
     QString job;                        // NULLable
     QString education;                  // NULLable
 
-    DbEnums::Sex sex = DbEnums::Sex::Male;  // (M или Ж) NOT NULL
+    TableEnums::Sex sex = TableEnums::Sex::Male;  // (M или Ж) NOT NULL
     QDate date_of_birth;                     // NOT NULL
 
     QString snils;                       // VARCHAR(11) UNIQUE NOT NULL

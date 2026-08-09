@@ -4,7 +4,7 @@
 #include <QDateTime>
 #include "table_enums.h"
 
-struct Appointment {
+struct Appointments {
     int id = 0;                       
 
     int patient_id = 0;               

@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
 
+# --- name ---
 project(MyQtApp 
     VERSION 1.0 
     LANGUAGES CXX
     )
 
-# -- --
+# -- c++ --
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -19,40 +20,47 @@ find_package(Qt5 REQUIRED COMPONENTS
     Core
     Sql
     Gui
+    Network
 )
 
-# --cpp файлы--
+# -- .cpp --
 set(SOURCES
     src/main.cpp
 
     #app
     src/app/application.cpp
 
-    src/db/db.cpp
+    #bd
+    src/db/ServerManager.cpp
+    src/db/PostgresSettings.cpp
+    src/db/DatabaseManager.cpp
 
+    #ui
     src/ui/mainwindow.cpp
 )
 
-# -- --
+# -- .h --
 set(HEADERS
-    src/ui/mainwindow.h
-    
     #app
     src/app/application.h
     
     #bd
+    src/db/ServerManager.h
+    src/db/PostgresSettings.h
+    src/db/DatabaseManager.h
     #models
-    src/db/models/appointments.h
-    src/db/models/doctor_speciality.h
-    src/db/models/doctor.h
-    src/db/models/patient.h
-    src/db/models/speciality.h
-    src/db/models/table_enums.h
-
-    src/db/db.h
+    src/db/models/Appointments.h
+    src/db/models/DoctorSpeciality.h
+    src/db/models/Doctor.h
+    src/db/models/Patient.h
+    src/db/models/Speciality.h
+    src/db/models/TableEnums.h
+    
+    #ui
+    src/ui/mainwindow.h
 )
 
-# -- --
+# -- .ui --
 set(UI_FILES
     src/ui/mainwindow.ui
 )
@@ -70,4 +78,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt5::Sql
     Qt5::Core
     Qt5::Gui
+    Qt5::Network
 )

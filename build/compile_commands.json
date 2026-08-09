@@ -1,31 +1,43 @@
 [
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\MyQtApp_autogen\\mocs_compilation.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\build\\MyQtApp_autogen\\mocs_compilation.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\MyQtApp_autogen\\mocs_compilation.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\build\\MyQtApp_autogen\\mocs_compilation.cpp",
   "file": "H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/mocs_compilation.cpp",
   "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\main.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\main.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\main.cpp",
   "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp",
   "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/main.cpp.obj"
 },
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\app\\application.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\app\\application.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\app\\application.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\app\\application.cpp",
   "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp",
   "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj"
 },
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\db.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\db.cpp",
-  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/db.cpp",
-  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/db.cpp.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\ServerManager.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\ServerManager.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/ServerManager.cpp.obj"
 },
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\ui\\mainwindow.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\ui\\mainwindow.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\PostgresSettings.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\PostgresSettings.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/PostgresSettings.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\DatabaseManager.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\DatabaseManager.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/DatabaseManager.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\ui\\mainwindow.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\ui\\mainwindow.cpp",
   "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp",
   "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj"
 }

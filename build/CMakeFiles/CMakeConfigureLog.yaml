@@ -3043,3 +3043,115 @@ events:
         - "H:/cmake"
         - "C:/Program Files (x86)/MyQtApp"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "C:/msys64/mingw64/lib/cmake/Qt5/Qt5Config.cmake:28 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
+    name: "Qt5Network"
+    configs:
+      -
+        filename: "Qt5Network.cps"
+        kind: "cps"
+      -
+        filename: "qt5network.cps"
+        kind: "cps"
+      -
+        filename: "Qt5NetworkConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt5network-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt5Network"
+      search_paths:
+        - "C:/msys64/mingw64/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/Qt5NetworkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/qt5network-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/lib/cps/Qt5Network.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/lib/cps/qt5network.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/share/cps/Qt5Network.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/pkgRedirects/share/cps/qt5network.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/mingw64/lib/cmake/Qt5NetworkConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/mingw64/lib/cmake/qt5network-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "C:/msys64/mingw64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake"
+      mode: "config"
+      version: "5.15.19"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/mingw64"
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "H:\\DevApps\\Git\\cmd"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "H:\\cmake\\bin"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Users\\shirm\\.local\\bin"
+        - "C:\\Users\\shirm\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "H:\\DevApps"
+        - "H:\\Microsoft VS Code\\bin"
+        - "C:\\Users\\shirm\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\msys64\\mingw64\\bin"
+        - "H:\\pgsql\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/MyQtApp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "H:/cmake"
+        - "C:/Program Files (x86)/MyQtApp"
+...

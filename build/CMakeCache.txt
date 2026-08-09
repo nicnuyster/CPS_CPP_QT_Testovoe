@@ -263,6 +263,9 @@ Qt5Core_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Core
 //The directory containing a CMake configuration file for Qt5Gui.
 Qt5Gui_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Gui
 
+//The directory containing a CMake configuration file for Qt5Network.
+Qt5Network_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Network
+
 //The directory containing a CMake configuration file for Qt5Sql.
 Qt5Sql_DIR:PATH=C:/msys64/mingw64/lib/cmake/Qt5Sql
 

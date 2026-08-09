@@ -7,6 +7,8 @@
 
 /* ---  src   ---*/
 #include "../ui/mainwindow.h"
+#include "../db/DatabaseManager.h"
+#include "../db/ServerManager.h"
 
 class Application : public QApplication
 {
@@ -17,6 +19,8 @@ public:
 
 private:
     MainWindow mainWindow;
+    ServerManager *pgServerManager;
+    DatabaseManager *pgDatabaseManager;
 };
 
 #endif // APPLICATION_H
