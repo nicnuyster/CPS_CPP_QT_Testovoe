@@ -10,24 +10,16 @@ Application::Application(int &argc, char **argv)
     setOrganizationName("CPS");
     setApplicationName("MyQtApp");
 
-    // 1. Load or create settings
     PostgresSettings settings;
     settings.load("CPS", "MyQtApp");
-    // The defaults are already set to your project layout:
-    //   pgBin -> projectRoot/pgsql
-    //   data  -> build/pgdata
-    // If you need to override, do it here, e.g.:
-    // settings.setPort(5433);
 
-    // 2. Create server and database managers
     pgServerManager = new ServerManager(settings, this);
     pgDatabaseManager = new DatabaseManager(settings, this);
 
-    // 3. Logging
     connect(pgServerManager, &ServerManager::logMessage,
             [](const QString &msg) { qDebug().noquote() << "[PG]" << msg; });
 
-    // 4. When server is ready, connect to database
+
     connect(pgServerManager, &ServerManager::serverStarted, this, [this]() {
         if (pgDatabaseManager->open()) {
             qDebug() << "Connected to database:" << pgDatabaseManager->database().databaseName();
@@ -37,11 +29,10 @@ Application::Application(int &argc, char **argv)
         }
     });
 
-    // 5. Handle database connection errors
     connect(pgDatabaseManager, &DatabaseManager::connectionError,
             [](const QString &err) { qWarning() << "DB error:" << err; });
 
-    // 6. Initialise cluster (if needed) then start server
+    
     pgServerManager->initDatabaseCluster();
     connect(pgServerManager, &ServerManager::initDbFinished,
             [this](bool success) {
@@ -49,16 +40,17 @@ Application::Application(int &argc, char **argv)
                     pgServerManager->start();
                 } else {
                     qCritical() << "Failed to initialise database cluster – application cannot start.";
-                    // You could quit here: QApplication::quit();
                 }
             });
 
-    // 7. Graceful shutdown: stop DB connection, then server
+    
+
+    // UI
+    mainWindow.show();
+
     connect(this, &QApplication::aboutToQuit, this, [this]() {
         pgDatabaseManager->close();
         pgServerManager->stop();
     });
-    // UI
-    mainWindow.show();
 
 }

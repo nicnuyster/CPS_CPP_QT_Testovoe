@@ -23,14 +23,20 @@ QString ServerManager::initDbPath() const
 bool ServerManager::initDatabaseCluster()
 {
     QDir dataDir(pgSettings.dataDirectory());
-    if (dataDir.exists() && !dataDir.entryList(QDir::NoDotAndDotDot).isEmpty()) {
-        emit logMessage("Data directory already initialized. Skipping initdb.");
-        emit initDbFinished(true, "Already exists.");
+
+    // Ensure the parent directory exists
+    QDir().mkpath(pgSettings.dataDirectory());
+
+    // Robust check: the PG_VERSION file is created by initdb and confirms a valid cluster
+    QString versionFile = dataDir.filePath("PG_VERSION");
+    if (QFile::exists(versionFile)) {
+        emit logMessage("Data directory already initialized (PG_VERSION found). Skipping initdb.");
+        emit initDbFinished(true, "Already initialized.");
         return true;
     }
 
-    QDir().mkpath(pgSettings.dataDirectory());   // ensure parent exists
-
+    //
+    
     if (pgProcess) pgProcess->deleteLater();
     pgProcess = new QProcess(this);
     connect(pgProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
@@ -116,7 +122,7 @@ bool ServerManager::isRunning()
     return (proc.exitCode() == 0);
 }
 
-// -------- private slots ----------
+// -------- private ----------
 void ServerManager::onStartFinished(int exitCode, QProcess::ExitStatus exitStatus)
 {
     QString output = pgProcess->readAllStandardOutput() + pgProcess->readAllStandardError();

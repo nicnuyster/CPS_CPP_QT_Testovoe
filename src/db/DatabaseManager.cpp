@@ -26,9 +26,6 @@ void DatabaseManager::ensureConnectionConfigured()
     db.setUserName(pgSettings.userName());
     db.setPassword(pgSettings.password());
 
-    // Optional: set connection options
-    // db.setConnectOptions("application_name=MyQtApp");
-
     pgConfigured = true;
 }
 
@@ -44,7 +41,7 @@ bool DatabaseManager::open()
     }
 
     if (db.isOpen()) {
-        return true; // already connected
+        return true;
     }
 
     if (db.open()) {
