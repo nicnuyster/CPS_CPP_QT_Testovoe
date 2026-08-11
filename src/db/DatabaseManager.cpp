@@ -56,7 +56,6 @@ bool DatabaseManager::open()
 
 void DatabaseManager::close()
 {
-    // Use "false" to avoid creating the database if it doesn't exist
     QSqlDatabase db = QSqlDatabase::database(pgConnectionName, false);
     if (db.isValid() && db.isOpen()) {
         db.close();
