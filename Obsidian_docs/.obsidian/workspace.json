@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "БД архитектура/таблицы/Doctors.md",
+                "file": "БД архитектура/БД.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Doctors"
+              "title": "БД"
             }
           }
         ],
@@ -203,18 +203,18 @@
   },
   "active": "ff47d1ab46ea21a2",
   "lastOpenFiles": [
-    "БД архитектура/БД.md",
     "БД архитектура/таблицы/Specialty.md",
-    "QT архитектура/bd/embeddingdb.md",
-    "БД архитектура/таблицы/doctor_specialty.md",
+    "БД архитектура/таблицы/Patients.md",
     "БД архитектура/таблицы/Doctors.md",
+    "БД архитектура/таблицы/doctor_specialty.md",
+    "БД архитектура/таблицы/Appointments.md",
+    "БД архитектура/БД.md",
+    "QT архитектура/bd/embeddingdb.md",
     "QT архитектура/QT архитектура.md",
     "Задание.md",
     "LLM.md",
     "QT архитектура/bd/models.md",
-    "БД архитектура/таблицы/Appointments.md",
     "QT архитектура/bd",
-    "БД архитектура/таблицы/Patients.md",
     "Без названия.md",
     "БД архитектура/таблицы/tables.md",
     "БД архитектура/бд/trigger_func.md",

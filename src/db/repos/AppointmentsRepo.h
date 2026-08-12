@@ -1,15 +1,15 @@
-#ifndef APPOINTMENTREPO_H
-#define APPOINTMENTREPO_H
+#ifndef APPOINTMENTSREPO_H
+#define APPOINTMENTSREPO_H
 
 #include <QString>
 #include "../DatabaseManager.h"
 
 class DatabaseManager;
 
-class AppointmentRepo
+class AppointmentsRepo
 {
 public:
-    explicit AppointmentRepo(DatabaseManager *dbManager);
+    explicit AppointmentsRepo(DatabaseManager *dbManager);
 
     bool createTable(QString &errorMessage) const;
 
@@ -17,4 +17,4 @@ private:
     DatabaseManager *m_dbManager;
 };
 
-#endif // APPOINTMENTREPOSITORY_H
+#endif // APPOINTMENTSREPOSITORY_H

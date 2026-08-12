@@ -1,25 +1,25 @@
-#include "SpecialtyRepo.h"
+#include "SpecialityRepo.h"
 
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
 
-SpecialtyRepo::SpecialtyRepo(DatabaseManager *dbManager)
+SpecialityRepo::SpecialityRepo(DatabaseManager *dbManager)
     : m_dbManager(dbManager)
 {
 }
 
-bool SpecialtyRepo::createTable(QString &errorMessage) const
+bool SpecialityRepo::createTable(QString &errorMessage) const
 {
     if (!m_dbManager) {
-        errorMessage = QStringLiteral("SpecialtyRepo: DatabaseManager is null.");
+        errorMessage = QStringLiteral("SpecialityRepo: DatabaseManager is null.");
         qWarning() << errorMessage;
         return false;
     }
 
     QSqlDatabase db = m_dbManager->database();
     if (!db.isOpen()) {
-        errorMessage = QStringLiteral("SpecialtyRepo: database connection is not open.");
+        errorMessage = QStringLiteral("SpecialityRepo: database connection is not open.");
         qWarning() << errorMessage;
         return false;
     }
@@ -40,7 +40,7 @@ bool SpecialtyRepo::createTable(QString &errorMessage) const
         return false;
     }
 
-    qDebug() << "SpecialtyRepo: table 'specialties' created (or already exists).";
+    qDebug() << "SpecialityRepo: table 'specialties' created (or already exists).";
     errorMessage.clear();
     return true;
 }

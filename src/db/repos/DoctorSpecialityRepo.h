@@ -1,15 +1,15 @@
-#ifndef DOCTORSPECIALTYREPO_H
-#define DOCTORSPECIALTYREPO_H
+#ifndef DOCTORSPECIALITYREPO_H
+#define DOCTORSPECIALITYREPO_H
 
 #include <QString>
 #include "../DatabaseManager.h"
 
 class DatabaseManager;
 
-class DoctorSpecialtyRepo
+class DoctorSpecialityRepo
 {
 public:
-    explicit DoctorSpecialtyRepo(DatabaseManager *dbManager);
+    explicit DoctorSpecialityRepo(DatabaseManager *dbManager);
 
     bool createTable(QString &errorMessage) const;
 
@@ -17,4 +17,4 @@ private:
     DatabaseManager *m_dbManager;
 };
 
-#endif // DOCTORSPECIALTYREPO_H
+#endif // DOCTORSPECIALITYREPO_H

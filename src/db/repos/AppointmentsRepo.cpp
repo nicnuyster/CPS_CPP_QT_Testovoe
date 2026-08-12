@@ -1,25 +1,25 @@
-#include "AppointmentRepo.h"
+#include "AppointmentsRepo.h"
 
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
 
-AppointmentRepo::AppointmentRepo(DatabaseManager *dbManager)
+AppointmentsRepo::AppointmentsRepo(DatabaseManager *dbManager)
     : m_dbManager(dbManager)
 {
 }
 
-bool AppointmentRepo::createTable(QString &errorMessage) const
+bool AppointmentsRepo::createTable(QString &errorMessage) const
 {
     if (!m_dbManager) {
-        errorMessage = QStringLiteral("AppointmentRepo: DatabaseManager is null.");
+        errorMessage = QStringLiteral("AppointmentsRepo: DatabaseManager is null.");
         qWarning() << errorMessage;
         return false;
     }
 
     QSqlDatabase db = m_dbManager->database();
     if (!db.isOpen()) {
-        errorMessage = QStringLiteral("AppointmentRepo: database connection is not open.");
+        errorMessage = QStringLiteral("AppointmentsRepo: database connection is not open.");
         qWarning() << errorMessage;
         return false;
     }
@@ -51,7 +51,7 @@ bool AppointmentRepo::createTable(QString &errorMessage) const
         return false;
     }
 
-    qDebug() << "AppointmentRepo: table 'appointments' created (or already exists).";
+    qDebug() << "AppointmentsRepo: table 'appointments' created (or already exists).";
     errorMessage.clear();
     return true;
 }

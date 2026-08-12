@@ -1,15 +1,15 @@
-#ifndef SPECIALTYREPO_H
-#define SPECIALTYREPO_H
+#ifndef SPECIALITYREPO_H
+#define SPECIALITYREPO_H
 
 #include <QString>
 #include "../DatabaseManager.h"
 
 class DatabaseManager;
 
-class SpecialtyRepo
+class SpecialityRepo
 {
 public:
-    explicit SpecialtyRepo(DatabaseManager *dbManager);
+    explicit SpecialityRepo(DatabaseManager *dbManager);
 
     bool createTable(QString &errorMessage) const;
 
