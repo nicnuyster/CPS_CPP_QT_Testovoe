@@ -34,6 +34,12 @@ set(SOURCES
     src/db/ServerManager.cpp
     src/db/PostgresSettings.cpp
     src/db/DatabaseManager.cpp
+    #repos
+    src/db/repos/AppointmentsRepo.cpp
+    src/db/repos/DoctorRepo.cpp
+    src/db/repos/DoctorSpecialityRepo.cpp
+    src/db/repos/PatientRepo.cpp
+    src/db/repos/SpecialityRepo.cpp
 
     #ui
     src/ui/mainwindow.cpp
@@ -55,7 +61,13 @@ set(HEADERS
     src/db/models/Patient.h
     src/db/models/Speciality.h
     src/db/models/TableEnums.h
-    
+    #repos
+    src/db/repos/AppointmentsRepo.h
+    src/db/repos/DoctorRepo.h
+    src/db/repos/DoctorSpecialityRepo.h
+    src/db/repos/PatientRepo.h
+    src/db/repos/SpecialityRepo.h
+
     #ui
     src/ui/mainwindow.h
 )

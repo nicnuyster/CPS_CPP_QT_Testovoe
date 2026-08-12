@@ -2,7 +2,7 @@
 #define APPOINTMENT_H
 
 #include <QDateTime>
-#include "table_enums.h"
+#include "TableEnums.h"
 
 struct Appointments {
     int id = 0;                       
@@ -13,7 +13,7 @@ struct Appointments {
 
     QDateTime start_datetime;         // NOT NULL
 
-    DbEnums::AppointmentStatus status = DbEnums::AppointmentStatus::Confirmed;
+    TableEnums::AppointmentStatus status = TableEnums::AppointmentStatus::Confirmed;
 
     QDateTime created_at;
     QDateTime updated_at;

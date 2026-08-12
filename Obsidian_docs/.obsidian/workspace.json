@@ -25,44 +25,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "БД архитектура/БД.md",
+                "file": "БД архитектура/таблицы/Doctors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "БД"
-            }
-          },
-          {
-            "id": "4c546064f296dc66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "QT архитектура/bd/embeddingdb.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "embeddingdb"
-            }
-          },
-          {
-            "id": "9039776bbee2098d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "QT архитектура/QT архитектура.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "QT архитектура"
+              "title": "Doctors"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,21 +201,21 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "9039776bbee2098d",
+  "active": "ff47d1ab46ea21a2",
   "lastOpenFiles": [
+    "БД архитектура/БД.md",
+    "БД архитектура/таблицы/Specialty.md",
+    "QT архитектура/bd/embeddingdb.md",
+    "БД архитектура/таблицы/doctor_specialty.md",
+    "БД архитектура/таблицы/Doctors.md",
+    "QT архитектура/QT архитектура.md",
     "Задание.md",
     "LLM.md",
-    "QT архитектура/bd/embeddingdb.md",
-    "QT архитектура/QT архитектура.md",
     "QT архитектура/bd/models.md",
     "БД архитектура/таблицы/Appointments.md",
     "QT архитектура/bd",
-    "БД архитектура/таблицы/doctor_specialty.md",
-    "БД архитектура/таблицы/Specialty.md",
-    "БД архитектура/таблицы/Doctors.md",
     "БД архитектура/таблицы/Patients.md",
     "Без названия.md",
-    "БД архитектура/БД.md",
     "БД архитектура/таблицы/tables.md",
     "БД архитектура/бд/trigger_func.md",
     "БД архитектура/бд/indexing.md",
