@@ -81,3 +81,38 @@ QSqlDatabase DatabaseManager::database() const
 {
     return QSqlDatabase::database(pgConnectionName);
 }
+
+// acid
+bool DatabaseManager::beginTransaction()
+{
+    QSqlDatabase db = QSqlDatabase::database(pgConnectionName);
+    if (!db.isOpen()) {
+        emit connectionError(QStringLiteral("Cannot begin transaction: database is not open."));
+        return false;
+    }
+    if (!db.transaction()) {
+        emit connectionError(QStringLiteral("Failed to begin transaction: %1").arg(db.lastError().text()));
+        return false;
+    }
+    return true;
+}
+
+bool DatabaseManager::commit()
+{
+    QSqlDatabase db = QSqlDatabase::database(pgConnectionName);
+    if (!db.commit()) {
+        emit connectionError(QStringLiteral("Failed to commit transaction: %1").arg(db.lastError().text()));
+        return false;
+    }
+    return true;
+}
+
+bool DatabaseManager::rollback()
+{
+    QSqlDatabase db = QSqlDatabase::database(pgConnectionName);
+    if (!db.rollback()) {
+        emit connectionError(QStringLiteral("Failed to rollback transaction: %1").arg(db.lastError().text()));
+        return false;
+    }
+    return true;
+}

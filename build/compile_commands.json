@@ -67,6 +67,24 @@
 },
 {
   "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\services\\AppointmentsService.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\services\\AppointmentsService.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/services/AppointmentsService.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\services\\DoctorService.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\services\\DoctorService.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/services/DoctorService.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\db\\services\\PatientService.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\db\\services\\PatientService.cpp",
+  "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.cpp",
+  "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/db/services/PatientService.cpp.obj"
+},
+{
+  "directory": "H:/GitHub/CPS_CPP_QT_Testovoe/build",
   "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork -g -std=gnu++17 -o CMakeFiles\\MyQtApp.dir\\src\\ui\\mainwindow.cpp.obj -c H:\\GitHub\\CPS_CPP_QT_Testovoe\\src\\ui\\mainwindow.cpp",
   "file": "H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp",
   "output": "H:/GitHub/CPS_CPP_QT_Testovoe/build/CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj"

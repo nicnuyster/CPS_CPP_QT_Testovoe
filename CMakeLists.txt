@@ -40,6 +40,10 @@ set(SOURCES
     src/db/repos/DoctorSpecialityRepo.cpp
     src/db/repos/PatientRepo.cpp
     src/db/repos/SpecialityRepo.cpp
+    #service
+    src/db/services/AppointmentsService.cpp
+    src/db/services/DoctorService.cpp
+    src/db/services/PatientService.cpp
 
     #ui
     src/ui/mainwindow.cpp
@@ -67,6 +71,10 @@ set(HEADERS
     src/db/repos/DoctorSpecialityRepo.h
     src/db/repos/PatientRepo.h
     src/db/repos/SpecialityRepo.h
+    #service
+    src/db/services/AppointmentsService.h
+    src/db/services/DoctorService.h
+    src/db/services/PatientService.h
 
     #ui
     src/ui/mainwindow.h

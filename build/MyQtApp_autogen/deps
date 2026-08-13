@@ -396,6 +396,12 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h \

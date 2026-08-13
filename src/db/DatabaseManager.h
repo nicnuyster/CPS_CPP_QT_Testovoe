@@ -12,12 +12,17 @@ public:
     explicit DatabaseManager(const PostgresSettings &settings, QObject *parent = nullptr);
     ~DatabaseManager();
 
-    bool open();                     // open the connection (lazy initialisation)
-    void close();                    // close and remove connection
+    bool open();                     
+    void close();                    
     bool isOpen() const;
     QString lastError() const;
 
-    QSqlDatabase database() const;   // access the underlying QSqlDatabase for queries
+    QSqlDatabase database() const;   
+
+    // acid
+    bool beginTransaction();
+    bool commit();
+    bool rollback();
 
 signals:
     void connected();
@@ -25,7 +30,7 @@ signals:
     void connectionError(const QString &error);
 
 private:
-    void ensureConnectionConfigured(); // set up connection parameters once
+    void ensureConnectionConfigured(); 
 
     const PostgresSettings &pgSettings;
     QString pgConnectionName;

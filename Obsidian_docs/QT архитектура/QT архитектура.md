@@ -14,7 +14,7 @@ app/
 db/ [[embeddingdb]]
 	models/ классы данных Доктор, кабинеты и т.п. [[models]]
 	repos/ чистые sql транзакции
-	servises/ оркестратор и "бизнес логика"
+	services/ оркестратор и "бизнес логика"
 	controllers/ UI к сервисам
 ui/
 	mainwindow.cpp
