@@ -19,7 +19,6 @@ public:
     bool insert(const Appointments &Appointments, int &outId, QString &errorMessage);
     bool remove(int id, QString &errorMessage);
     bool findById(int id, Appointments &outAppointments, QString &errorMessage);
-    bool update();
     bool update(const Appointments &appointment, QString &errorMessage);
     bool listAll(QVector<Appointments> &outAppointments, QString &errorMessage);
 

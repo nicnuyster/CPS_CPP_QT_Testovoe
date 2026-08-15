@@ -11,7 +11,7 @@ Application::Application(int &argc, char **argv)
     setApplicationName("MyQtApp");
 
     PostgresSettings settings;
-    settings.load("CPS", "MyQtApp");
+    pgSettings.load("CPS", "MyQtApp");
 
     pgServerManager = new ServerManager(settings, this);
     pgDatabaseManager = new DatabaseManager(settings, this);
@@ -23,7 +23,18 @@ Application::Application(int &argc, char **argv)
     connect(pgServerManager, &ServerManager::serverStarted, this, [this]() {
         if (pgDatabaseManager->open()) {
             qDebug() << "Connected to database:" << pgDatabaseManager->database().databaseName();
-            // Optionally emit a signal or perform initial queries
+            
+            AppExmpl init(pgDatabaseManager);
+            QString err;
+
+            if (!init.applyMigrations(err)) {
+                qCritical() << "Migrations failed:" << err;
+            }
+
+            if (!init.seedAppointments(err)) {
+                qWarning() << "Seeding appointments failed:" << err;
+            }
+        
         } else {
             qCritical() << "Database connection failed:" << pgDatabaseManager->lastError();
         }
@@ -45,12 +56,17 @@ Application::Application(int &argc, char **argv)
 
     
 
-    // UI
-    mainWindow.show();
 
     connect(this, &QApplication::aboutToQuit, this, [this]() {
-        pgDatabaseManager->close();
-        pgServerManager->stop();
+        if (pgDatabaseManager) pgDatabaseManager->close();
+        if (pgServerManager) pgServerManager->stop();
+        
+        AppExmpl init(pgDatabaseManager);
+        if(!init.pgDumpAll()){
+            qWarning() << "Dump failed:";
+        }
     });
 
+    // UI
+    mainWindow.show();
 }

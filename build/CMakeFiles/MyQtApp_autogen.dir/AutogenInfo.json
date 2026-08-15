@@ -90,6 +90,12 @@
 			null
 		],
 		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h",
+			"MU",
+			"NUII62APJS/moc_AppExmpl.cpp",
+			null
+		],
+		[
 			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h",
 			"MU",
 			"RLKJE3IM4Y/moc_DatabaseManager.cpp",
@@ -257,6 +263,11 @@
 	"SOURCES" : 
 	[
 		[ "H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp", "MU", null ],
+		[
+			"H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp",
+			"MU",
+			null
+		],
 		[
 			"H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp",
 			"MU",

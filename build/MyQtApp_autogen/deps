@@ -1,5 +1,7 @@
 MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/QCoreApplication \
+	C:/msys64/mingw64/include/QtCore/QDate \
+	C:/msys64/mingw64/include/QtCore/QDateTime \
 	C:/msys64/mingw64/include/QtCore/QDir \
 	C:/msys64/mingw64/include/QtCore/QObject \
 	C:/msys64/mingw64/include/QtCore/QProcess \
@@ -20,6 +22,7 @@ MyQtApp_autogen/timestamp: \
 	C:/msys64/mingw64/include/QtCore/qcoreapplication.h \
 	C:/msys64/mingw64/include/QtCore/qcoreevent.h \
 	C:/msys64/mingw64/include/QtCore/qdatastream.h \
+	C:/msys64/mingw64/include/QtCore/qdatetime.h \
 	C:/msys64/mingw64/include/QtCore/qdir.h \
 	C:/msys64/mingw64/include/QtCore/qeventloop.h \
 	C:/msys64/mingw64/include/QtCore/qfile.h \
@@ -374,6 +377,8 @@ MyQtApp_autogen/timestamp: \
 	H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp \
+	H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h \
 	H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.cpp \

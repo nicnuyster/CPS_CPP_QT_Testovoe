@@ -29,7 +29,6 @@ bool PatientService::createPatient(const Patient &patient, int &outId, QString &
         return false;
     }
 
-    // --- Check SNILS duplicate ---
     QSqlQuery checkSnils(db);
     checkSnils.prepare(QStringLiteral("SELECT id FROM patients WHERE snils = :snils"));
     checkSnils.bindValue(QStringLiteral(":snils"), patient.snils);
@@ -45,7 +44,6 @@ bool PatientService::createPatient(const Patient &patient, int &outId, QString &
         return false;
     }
 
-    // --- Check POLIS duplicate ---
     QSqlQuery checkPolis(db);
     checkPolis.prepare(QStringLiteral("SELECT id FROM patients WHERE polis = :polis"));
     checkPolis.bindValue(QStringLiteral(":polis"), patient.polis);
@@ -61,7 +59,6 @@ bool PatientService::createPatient(const Patient &patient, int &outId, QString &
         return false;
     }
 
-    // --- Insert ---
     PatientRepo repo(m_dbManager);
     if (!repo.insert(patient, outId, errorMessage)) {
         m_dbManager->rollback();

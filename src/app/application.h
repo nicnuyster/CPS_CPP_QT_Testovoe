@@ -9,6 +9,7 @@
 #include "../ui/mainwindow.h"
 #include "../db/DatabaseManager.h"
 #include "../db/ServerManager.h"
+#include "exmpl/AppExmpl.h"
 
 class Application : public QApplication
 {
@@ -18,6 +19,7 @@ public:
     Application(int &argc, char **argv);
 
 private:
+    PostgresSettings pgSettings;
     MainWindow mainWindow;
     ServerManager *pgServerManager;
     DatabaseManager *pgDatabaseManager;

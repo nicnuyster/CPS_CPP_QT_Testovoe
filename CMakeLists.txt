@@ -29,7 +29,7 @@ set(SOURCES
 
     #app
     src/app/application.cpp
-
+    src/app/exmpl/AppExmpl.cpp
     #bd
     src/db/ServerManager.cpp
     src/db/PostgresSettings.cpp
@@ -53,7 +53,7 @@ set(SOURCES
 set(HEADERS
     #app
     src/app/application.h
-    
+    src/app/exmpl/AppExmpl.h
     #bd
     src/db/ServerManager.h
     src/db/PostgresSettings.h

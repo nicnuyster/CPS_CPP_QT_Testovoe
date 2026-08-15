@@ -29,7 +29,6 @@ bool DoctorService::createDoctor(const Doctor &doctor, int &outId, QString &erro
         return false;
     }
 
-    // --- Check exact duplicate (name + phone) ---
     QSqlQuery checkDup(db);
     checkDup.prepare(QStringLiteral(
         "SELECT id FROM doctors "

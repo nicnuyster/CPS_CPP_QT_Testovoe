@@ -3,6 +3,8 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorSpecialityRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mmc:Q_OBJECT
  mdp:C:/msys64/mingw64/include/QtCore/QCoreApplication
+ mdp:C:/msys64/mingw64/include/QtCore/QDate
+ mdp:C:/msys64/mingw64/include/QtCore/QDateTime
  mdp:C:/msys64/mingw64/include/QtCore/QDir
  mdp:C:/msys64/mingw64/include/QtCore/QObject
  mdp:C:/msys64/mingw64/include/QtCore/QProcess
@@ -23,6 +25,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreapplication.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreevent.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatastream.h
+ mdp:C:/msys64/mingw64/include/QtCore/qdatetime.h
  mdp:C:/msys64/mingw64/include/QtCore/qdir.h
  mdp:C:/msys64/mingw64/include/QtCore/qeventloop.h
  mdp:C:/msys64/mingw64/include/QtCore/qfile.h
@@ -338,9 +341,22 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Appointments.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Doctor.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/DoctorSpeciality.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Patient.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Speciality.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/AppointmentsRepo.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorRepo.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorSpecialityRepo.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.h
+ mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h
@@ -1540,3 +1556,5 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp

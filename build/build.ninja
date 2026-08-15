@@ -79,6 +79,16 @@ build CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj: CXX_COMPILER__MyQtApp_
   OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\src\app
   TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
 
+build CMakeFiles/MyQtApp.dir/src/app/exmpl/AppExmpl.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp || cmake_object_order_depends_target_MyQtApp
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\MyQtApp.dir\src\app\exmpl\AppExmpl.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -IH:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/include -isystem C:/msys64/mingw64/include/QtWidgets -isystem C:/msys64/mingw64/include/QtGui -isystem C:/msys64/mingw64/include/QtCore -isystem C:/msys64/mingw64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/mingw64/include/QtSql -isystem C:/msys64/mingw64/include/QtNetwork
+  OBJECT_DIR = CMakeFiles\MyQtApp.dir
+  OBJECT_FILE_DIR = CMakeFiles\MyQtApp.dir\src\app\exmpl
+  TARGET_SUPPORT_DIR = CMakeFiles\MyQtApp.dir
+
 build CMakeFiles/MyQtApp.dir/src/db/ServerManager.cpp.obj: CXX_COMPILER__MyQtApp_unscanned_Debug H$:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.cpp || cmake_object_order_depends_target_MyQtApp
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB
@@ -207,7 +217,7 @@ build CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj: CXX_COMPILER__MyQtApp_un
 #############################################
 # Link the executable MyQtApp.exe
 
-build MyQtApp.exe: CXX_EXECUTABLE_LINKER__MyQtApp_Debug CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj CMakeFiles/MyQtApp.dir/src/main.cpp.obj CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj CMakeFiles/MyQtApp.dir/src/db/ServerManager.cpp.obj CMakeFiles/MyQtApp.dir/src/db/PostgresSettings.cpp.obj CMakeFiles/MyQtApp.dir/src/db/DatabaseManager.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/AppointmentsRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/DoctorRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/DoctorSpecialityRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/PatientRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/SpecialityRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/AppointmentsService.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/DoctorService.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/PatientService.cpp.obj CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj | C$:/msys64/mingw64/lib/libQt5Widgets.dll.a C$:/msys64/mingw64/lib/libQt5Sql.dll.a C$:/msys64/mingw64/lib/libQt5Gui.dll.a C$:/msys64/mingw64/lib/libQt5Network.dll.a C$:/msys64/mingw64/lib/libQt5Core.dll.a || MyQtApp_autogen MyQtApp_autogen_timestamp_deps
+build MyQtApp.exe: CXX_EXECUTABLE_LINKER__MyQtApp_Debug CMakeFiles/MyQtApp.dir/MyQtApp_autogen/mocs_compilation.cpp.obj CMakeFiles/MyQtApp.dir/src/main.cpp.obj CMakeFiles/MyQtApp.dir/src/app/application.cpp.obj CMakeFiles/MyQtApp.dir/src/app/exmpl/AppExmpl.cpp.obj CMakeFiles/MyQtApp.dir/src/db/ServerManager.cpp.obj CMakeFiles/MyQtApp.dir/src/db/PostgresSettings.cpp.obj CMakeFiles/MyQtApp.dir/src/db/DatabaseManager.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/AppointmentsRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/DoctorRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/DoctorSpecialityRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/PatientRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/repos/SpecialityRepo.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/AppointmentsService.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/DoctorService.cpp.obj CMakeFiles/MyQtApp.dir/src/db/services/PatientService.cpp.obj CMakeFiles/MyQtApp.dir/src/ui/mainwindow.cpp.obj | C$:/msys64/mingw64/lib/libQt5Widgets.dll.a C$:/msys64/mingw64/lib/libQt5Sql.dll.a C$:/msys64/mingw64/lib/libQt5Gui.dll.a C$:/msys64/mingw64/lib/libQt5Network.dll.a C$:/msys64/mingw64/lib/libQt5Core.dll.a || MyQtApp_autogen MyQtApp_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/msys64/mingw64/lib/libQt5Widgets.dll.a  C:/msys64/mingw64/lib/libQt5Sql.dll.a  C:/msys64/mingw64/lib/libQt5Gui.dll.a  C:/msys64/mingw64/lib/libQt5Network.dll.a  C:/msys64/mingw64/lib/libQt5Core.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

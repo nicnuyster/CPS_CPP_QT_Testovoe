@@ -158,7 +158,9 @@ void ServerManager::onInitDbFinished(int exitCode, QProcess::ExitStatus exitStat
 void ServerManager::onProcessError(QProcess::ProcessError error)
 {
     Q_UNUSED(error)
-    emit logMessage("Process error: " + pgProcess->errorString());
+    QString msg = "Process error: " + pgProcess->errorString();
+    emit logMessage(msg);
+    emit initDbFinished(false, msg);
 }
 
 void ServerManager::readOutput()
