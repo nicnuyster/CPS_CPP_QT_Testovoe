@@ -1,11 +1,16 @@
 #include "AppExmpl.h"
 
-#include <QSqlDatabase>
-#include <QDateTime>
+#include <QCoreApplication>
 #include <QDate>
-#include <QTime>
+#include <QDateTime>
 #include <QDebug>
+#include <QDir>
+#include <QFile>
 #include <QProcess>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
+#include <QTime>
 
 AppExmpl::AppExmpl(DatabaseManager *dbManager)
     : m_dbManager(dbManager)
@@ -14,47 +19,33 @@ AppExmpl::AppExmpl(DatabaseManager *dbManager)
 
 bool AppExmpl::applyMigrations(QString &errorMessage) const
 {
-    if (!m_dbManager) {
-        errorMessage = QStringLiteral("AppExmpl: DatabaseManager is null.");
-        qWarning() << errorMessage;
+    if (!m_dbManager || !m_dbManager->database().isOpen()) {
+        errorMessage = QStringLiteral("Database not open.");
         return false;
     }
 
     QSqlDatabase db = m_dbManager->database();
-    if (!db.isOpen()) {
-        errorMessage = QStringLiteral("AppExmpl: database connection is not open.");
-        qWarning() << errorMessage;
-        return false;
+    QString migrationsDir = QDir(QCoreApplication::applicationDirPath() + "/../migrations").absolutePath();
+    QDir dir(migrationsDir);
+    QStringList files = dir.entryList(QStringList() << "*.up.sql", QDir::Files, QDir::Name);
+
+    for (const QString &fileName : files) {
+        QFile file(dir.absoluteFilePath(fileName));
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            errorMessage = QStringLiteral("Cannot open %1").arg(fileName);
+            return false;
+        }
+        QString sql = QString::fromUtf8(file.readAll());
+        file.close();
+
+        QSqlQuery query(db);
+        if (!query.exec(sql)) {
+            errorMessage = QStringLiteral("Migration %1 failed: %2").arg(fileName, query.lastError().text());
+            return false;
+        }
+        qDebug() << "Applied migration:" << fileName;
     }
 
-    SpecialityRepo       specialityRepo(m_dbManager);
-    DoctorRepo           doctorRepo(m_dbManager);
-    PatientRepo          patientRepo(m_dbManager);
-    DoctorSpecialityRepo doctorSpecialityRepo(m_dbManager);
-    AppointmentsRepo     appointmentsRepo(m_dbManager);
-
-    if (!specialityRepo.createTable(errorMessage)) {
-        qWarning() << "AppExmpl: specialties table failed:" << errorMessage;
-        return false;
-    }
-    if (!doctorRepo.createTable(errorMessage)) {
-        qWarning() << "AppExmpl: doctors table failed:" << errorMessage;
-        return false;
-    }
-    if (!patientRepo.createTable(errorMessage)) {
-        qWarning() << "AppExmpl: patients table failed:" << errorMessage;
-        return false;
-    }
-    if (!doctorSpecialityRepo.createTable(errorMessage)) {
-        qWarning() << "AppExmpl: doctor_specialties table failed:" << errorMessage;
-        return false;
-    }
-    if (!appointmentsRepo.createTable(errorMessage)) {
-        qWarning() << "AppExmpl: appointments table failed:" << errorMessage;
-        return false;
-    }
-
-    qDebug() << "AppExmpl: all migrations applied successfully.";
     errorMessage.clear();
     return true;
 }
@@ -148,7 +139,7 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
 
 bool AppExmpl::pgDumpAll() {
     QProcess proc;
-    proc.setStandardOutputFile("dump.txt");
+    proc.setStandardOutputFile("../../../pgsql/bin/pf_dumpall.exe");
     proc.start("pg_dumpall", {
         "-h", "127.0.0.1",
         "-p", "6321",
