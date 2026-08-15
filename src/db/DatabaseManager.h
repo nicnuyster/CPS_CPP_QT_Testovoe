@@ -32,7 +32,7 @@ signals:
 private:
     void ensureConnectionConfigured(); 
 
-    const PostgresSettings &pgSettings;
+    PostgresSettings pgSettings;
     QString pgConnectionName;
     bool pgConfigured = false;
 };

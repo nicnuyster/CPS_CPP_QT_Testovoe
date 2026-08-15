@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QProcess>
 #include "PostgresSettings.h"
+#include <QThread>
 
 class ServerManager : public QObject
 {
@@ -16,6 +17,7 @@ public:
     void stop();
     void stopImmediate();
     bool isRunning();
+    void stopBlocking();
 
 signals:
     void serverStarted();
@@ -36,7 +38,7 @@ private:
     QString pgCtlPath() const;
     QString initDbPath() const;
 
-    const PostgresSettings &pgSettings;
+    PostgresSettings pgSettings;
     QProcess *pgProcess;
 };
 

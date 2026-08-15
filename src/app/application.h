@@ -4,6 +4,9 @@
 /* ---  QT  --- */
 #include <QApplication>
 #include <QMainWindow>
+#include <QThread>
+#include <QSqlDatabase>
+#include <QSqlQuery>
 
 /* ---  src   ---*/
 #include "../ui/mainwindow.h"

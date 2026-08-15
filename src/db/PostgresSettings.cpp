@@ -9,9 +9,28 @@ PostgresSettings::PostgresSettings()
     , m_databaseName("local_qt_db")
 {
     QString appDir = QCoreApplication::applicationDirPath();
-    QString projectRoot = QDir::cleanPath(appDir + "/.."); 
-    m_pgBinDir = QDir(projectRoot).filePath("pgsql/bin");       
-    m_dataDir  = QDir(appDir).filePath("pgdata");       
+
+    // Try multiple candidate paths for pgsql/bin
+    QStringList candidates;
+    candidates << QDir(appDir).filePath("../../pgsql/bin");   // shadow build
+    candidates << QDir(appDir).filePath("../pgsql/bin");      // flat build
+    candidates << QDir(appDir).filePath("pgsql/bin");         // same dir
+    candidates << "C:/Program Files/PostgreSQL/9.6/bin";      // system install
+
+    for (const QString &path : candidates) {
+        QString cleanPath = QDir::cleanPath(path);
+        if (QFile::exists(QDir(cleanPath).filePath("initdb.exe"))) {
+            m_pgBinDir = cleanPath;
+            break;
+        }
+    }
+
+    // Fallback to first candidate if none found (will fail loudly later)
+    if (m_pgBinDir.isEmpty()) {
+        m_pgBinDir = QDir::cleanPath(candidates.first());
+    }
+
+    m_dataDir  = QDir(appDir).filePath("pgdata");
     m_logFile  = QDir(m_dataDir).filePath("server.log");
 }
 

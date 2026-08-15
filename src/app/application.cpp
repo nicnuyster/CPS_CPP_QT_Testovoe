@@ -1,6 +1,7 @@
 #include "application.h"
 #include <QDebug>
 #include <QSqlError> 
+#include <QThread>
 
 // constructor
 Application::Application(int &argc, char **argv)
@@ -21,10 +22,34 @@ Application::Application(int &argc, char **argv)
 
 
     connect(pgServerManager, &ServerManager::serverStarted, this, [this]() {
+        QThread::msleep(1500);
+
+        // --- CREATE APPLICATION DATABASE IF IT DOESN'T EXIST ---
+        {
+            QSqlDatabase tempDb = QSqlDatabase::addDatabase("QPSQL", "temp_create_db");
+            tempDb.setHostName(pgSettings.host());
+            tempDb.setPort(pgSettings.port());
+            tempDb.setDatabaseName("postgres");   // connect to default db first
+            tempDb.setUserName(pgSettings.userName());
+            tempDb.setPassword(pgSettings.password());
+
+            if (tempDb.open()) {
+                QSqlQuery query(tempDb);
+                query.exec(QString("CREATE DATABASE %1")
+                           .arg(pgSettings.databaseName()));
+                tempDb.close();
+            } else {
+                qWarning() << "Could not connect to postgres db to create app database:"
+                           << tempDb.lastError().text();
+            }
+            QSqlDatabase::removeDatabase("temp_create_db");
+        }
+        // --------------------------------------------------------
+
         if (pgDatabaseManager->open()) {
             qDebug() << "Connected to database:" << pgDatabaseManager->database().databaseName();
             
-            AppExmpl init(pgDatabaseManager);
+            AppExmpl init(pgDatabaseManager, pgSettings);
             QString err;
 
             if (!init.applyMigrations(err)) {
@@ -55,18 +80,35 @@ Application::Application(int &argc, char **argv)
             });
 
     
-
-
-    connect(this, &QApplication::aboutToQuit, this, [this]() {
-        if (pgDatabaseManager) pgDatabaseManager->close();
-        if (pgServerManager) pgServerManager->stop();
-        
-        AppExmpl init(pgDatabaseManager);
-        if(!init.pgDumpAll()){
-            qWarning() << "Dump failed:";
-        }
-    });
-
     // UI
     mainWindow.show();
+
+    connect(this, &QApplication::aboutToQuit, this, [this]() {
+        qDebug() << "[App] aboutToQuit - starting backup...";
+
+        // Only dump if database was actually connected
+        if (pgDatabaseManager && pgDatabaseManager->isOpen()) {
+            AppExmpl init(pgDatabaseManager, pgSettings);
+            QString dumpErr;
+            if (!init.pgDumpAll(&dumpErr)) {
+                qWarning() << "[App] Backup failed:" << dumpErr;
+            } else {
+                qDebug() << "[App] Backup completed successfully.";
+            }
+            
+            pgDatabaseManager->close();
+            qDebug() << "[App] Database connection closed.";
+        } else {
+            qDebug() << "[App] Database was never connected, skipping backup.";
+        }
+
+        // Stop server and WAIT for it
+        if (pgServerManager) {
+            pgServerManager->stopBlocking();
+            qDebug() << "[App] Server stopped.";
+        }
+        
+        // Give Qt event loop a moment to clean up processes
+        QThread::msleep(500);
+    });
 }

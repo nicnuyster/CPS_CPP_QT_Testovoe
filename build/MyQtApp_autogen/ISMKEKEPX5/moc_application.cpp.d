@@ -8,6 +8,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtCore/QProcess \
   C:/msys64/mingw64/include/QtCore/QSettings \
   C:/msys64/mingw64/include/QtCore/QString \
+  C:/msys64/mingw64/include/QtCore/QThread \
   C:/msys64/mingw64/include/QtCore/qalgorithms.h \
   C:/msys64/mingw64/include/QtCore/qarraydata.h \
   C:/msys64/mingw64/include/QtCore/qatomic.h \
@@ -24,7 +25,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtCore/qcoreevent.h \
   C:/msys64/mingw64/include/QtCore/qdatastream.h \
   C:/msys64/mingw64/include/QtCore/qdatetime.h \
+  C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h \
   C:/msys64/mingw64/include/QtCore/qdir.h \
+  C:/msys64/mingw64/include/QtCore/qelapsedtimer.h \
   C:/msys64/mingw64/include/QtCore/qeventloop.h \
   C:/msys64/mingw64/include/QtCore/qfile.h \
   C:/msys64/mingw64/include/QtCore/qfiledevice.h \
@@ -72,6 +75,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtCore/qsysinfo.h \
   C:/msys64/mingw64/include/QtCore/qsystemdetection.h \
   C:/msys64/mingw64/include/QtCore/qtcore-config.h \
+  C:/msys64/mingw64/include/QtCore/qthread.h \
   C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
   C:/msys64/mingw64/include/QtCore/qvariant.h \
   C:/msys64/mingw64/include/QtCore/qvarlengtharray.h \
@@ -103,7 +107,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/QtGui/qwindowdefs.h \
   C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/mingw64/include/QtSql/QSqlDatabase \
+  C:/msys64/mingw64/include/QtSql/QSqlQuery \
   C:/msys64/mingw64/include/QtSql/qsqldatabase.h \
+  C:/msys64/mingw64/include/QtSql/qsqlquery.h \
   C:/msys64/mingw64/include/QtSql/qtsql-config.h \
   C:/msys64/mingw64/include/QtSql/qtsqlglobal.h \
   C:/msys64/mingw64/include/QtWidgets/QApplication \
@@ -260,6 +266,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/ISMKEKEPX5/moc_application.c
   C:/msys64/mingw64/include/c++/16.1.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/16.1.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/16.1.0/functional \
+  C:/msys64/mingw64/include/c++/16.1.0/future \
   C:/msys64/mingw64/include/c++/16.1.0/initializer_list \
   C:/msys64/mingw64/include/c++/16.1.0/ios \
   C:/msys64/mingw64/include/c++/16.1.0/iosfwd \

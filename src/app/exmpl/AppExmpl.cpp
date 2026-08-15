@@ -12,8 +12,9 @@
 #include <QSqlQuery>
 #include <QTime>
 
-AppExmpl::AppExmpl(DatabaseManager *dbManager)
+AppExmpl::AppExmpl(DatabaseManager *dbManager, const PostgresSettings &settings)
     : m_dbManager(dbManager)
+    , m_pgSettings(settings)
 {
 }
 
@@ -137,15 +138,118 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
     return true;
 }
 
-bool AppExmpl::pgDumpAll() {
+bool AppExmpl::pgDumpAll(QString *errorMessage)
+{
+    // Use pg_dump instead of pg_dumpall (no template1 needed)
+    QString pgDumpPath = QDir(m_pgSettings.pgBinDirectory()).filePath("pg_dump.exe");
+
+    if (!QFile::exists(pgDumpPath)) {
+        QString err = QString("pg_dump.exe not found at: %1").arg(pgDumpPath);
+        qWarning() << err;
+        if (errorMessage) *errorMessage = err;
+        return false;
+    }
+
+    QString appDir = QCoreApplication::applicationDirPath();
+    QString timestamp = QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss");
+    QString dumpFileName = QString("backup_%1.sql").arg(timestamp);
+    QString dumpFilePath = QDir(appDir).filePath(dumpFileName);
+
     QProcess proc;
-    proc.setStandardOutputFile("../../../pgsql/bin/pf_dumpall.exe");
-    proc.start("pg_dumpall", {
-        "-h", "127.0.0.1",
-        "-p", "6321",
-        "-U", "postgres"
-    });
-    proc.waitForFinished(-1);
-    qDebug() << proc.exitCode() << proc.readAllStandardError();
-    return (proc.exitCode() == 0);
+    proc.setWorkingDirectory(m_pgSettings.pgBinDirectory());
+    
+    QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
+    QString path = env.value("PATH");
+    env.insert("PATH", m_pgSettings.pgBinDirectory() + ";" + path);
+    env.insert("PGPASSWORD", m_pgSettings.password());
+    proc.setProcessEnvironment(env);
+
+    // pg_dump args: specific database, no template1 needed
+    QStringList args;
+    args << "-h" << m_pgSettings.host()
+         << "-p" << QString::number(m_pgSettings.port())
+         << "-U" << m_pgSettings.userName()
+         << "-d" << m_pgSettings.databaseName()
+         << "-F" << "p";  // plain SQL format
+
+    qDebug() << "[pgDump] exe :" << pgDumpPath;
+    qDebug() << "[pgDump] args:" << args;
+    qDebug() << "[pgDump] out :" << dumpFilePath;
+
+    proc.start(pgDumpPath, args);
+
+    if (!proc.waitForStarted(10000)) {
+        QString err = QString("Failed to start pg_dump: %1").arg(proc.errorString());
+        qWarning() << err;
+        if (errorMessage) *errorMessage = err;
+        return false;
+    }
+
+    QByteArray stdoutData;
+    QByteArray stderrData;
+    
+    while (proc.state() == QProcess::Running) {
+        proc.waitForReadyRead(1000);
+        stdoutData += proc.readAllStandardOutput();
+        stderrData += proc.readAllStandardError();
+    }
+    proc.waitForFinished();
+    stdoutData += proc.readAllStandardOutput();
+    stderrData += proc.readAllStandardError();
+
+    // Write output
+    bool fileOk = false;
+    if (!stdoutData.isEmpty()) {
+        QFile outFile(dumpFilePath);
+        if (outFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            outFile.write(stdoutData);
+            outFile.close();
+            fileOk = true;
+        }
+    }
+
+    QString errFilePath = dumpFilePath + ".err";
+    if (!stderrData.isEmpty()) {
+        QFile errFile(errFilePath);
+        if (errFile.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            errFile.write(stderrData);
+            errFile.close();
+        }
+    } else {
+        QFile::remove(errFilePath);
+    }
+
+    int exitCode = proc.exitCode();
+    QProcess::ExitStatus exitStatus = proc.exitStatus();
+    QString stderrText = QString::fromLocal8Bit(stderrData);
+
+    qDebug() << "[pgDump] exit code :" << exitCode;
+    qDebug() << "[pgDump] exit status:" << (exitStatus == QProcess::NormalExit ? "normal" : "crashed");
+    qDebug() << "[pgDump] stderr    :" << stderrText;
+    qDebug() << "[pgDump] stdout len:" << stdoutData.size();
+
+    if (exitStatus == QProcess::CrashExit) {
+        QString err = "pg_dump crashed. Missing DLLs?";
+        if (errorMessage) *errorMessage = err;
+        return false;
+    }
+
+    if (exitCode != 0) {
+        QString err = QString("pg_dump failed (exit=%1). Stderr: %2")
+                          .arg(exitCode)
+                          .arg(stderrText.isEmpty() ? "<empty>" : stderrText);
+        qWarning() << err;
+        if (errorMessage) *errorMessage = err;
+        return false;
+    }
+
+    if (!fileOk || stdoutData.isEmpty()) {
+        QString err = "pg_dump succeeded but produced no output.";
+        if (errorMessage) *errorMessage = err;
+        return false;
+    }
+
+    qDebug() << "[pgDump] SUCCESS:" << dumpFilePath
+             << "Size:" << QFileInfo(dumpFilePath).size() << "bytes";
+    return true;
 }

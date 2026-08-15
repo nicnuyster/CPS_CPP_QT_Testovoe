@@ -4,6 +4,7 @@
 #include <QString>
 
 #include "../../db/DatabaseManager.h"
+#include "../../db/PostgresSettings.h"
 #include "../../db/repos/SpecialityRepo.h"
 #include "../../db/repos/DoctorRepo.h"
 #include "../../db/repos/PatientRepo.h"
@@ -22,16 +23,17 @@ class DatabaseManager;
 class AppExmpl
 {
 public:
-    explicit AppExmpl(DatabaseManager *dbManager);
+    explicit AppExmpl(DatabaseManager *dbManager, const PostgresSettings &settings);
 
     bool applyMigrations(QString &errorMessage) const;
 
     bool seedAppointments(QString &errorMessage) const;
 
-    bool pgDumpAll();
+    bool pgDumpAll(QString *errorMessage = nullptr);
 
 private:
     DatabaseManager *m_dbManager;
+    PostgresSettings m_pgSettings;
 };
 
 #endif // APPEXMPL_H

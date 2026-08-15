@@ -6,6 +6,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/RLKJE3IM4Y/moc_ServerManager
   C:/msys64/mingw64/include/QtCore/QProcess \
   C:/msys64/mingw64/include/QtCore/QSettings \
   C:/msys64/mingw64/include/QtCore/QString \
+  C:/msys64/mingw64/include/QtCore/QThread \
   C:/msys64/mingw64/include/QtCore/qalgorithms.h \
   C:/msys64/mingw64/include/QtCore/qarraydata.h \
   C:/msys64/mingw64/include/QtCore/qatomic.h \
@@ -20,7 +21,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/RLKJE3IM4Y/moc_ServerManager
   C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h \
   C:/msys64/mingw64/include/QtCore/qcoreapplication.h \
   C:/msys64/mingw64/include/QtCore/qcoreevent.h \
+  C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h \
   C:/msys64/mingw64/include/QtCore/qdir.h \
+  C:/msys64/mingw64/include/QtCore/qelapsedtimer.h \
   C:/msys64/mingw64/include/QtCore/qeventloop.h \
   C:/msys64/mingw64/include/QtCore/qfile.h \
   C:/msys64/mingw64/include/QtCore/qfiledevice.h \
@@ -60,6 +63,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/RLKJE3IM4Y/moc_ServerManager
   C:/msys64/mingw64/include/QtCore/qsysinfo.h \
   C:/msys64/mingw64/include/QtCore/qsystemdetection.h \
   C:/msys64/mingw64/include/QtCore/qtcore-config.h \
+  C:/msys64/mingw64/include/QtCore/qthread.h \
   C:/msys64/mingw64/include/QtCore/qtypeinfo.h \
   C:/msys64/mingw64/include/QtCore/qvariant.h \
   C:/msys64/mingw64/include/QtCore/qvarlengtharray.h \
@@ -210,6 +214,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/RLKJE3IM4Y/moc_ServerManager
   C:/msys64/mingw64/include/c++/16.1.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/16.1.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/16.1.0/functional \
+  C:/msys64/mingw64/include/c++/16.1.0/future \
   C:/msys64/mingw64/include/c++/16.1.0/initializer_list \
   C:/msys64/mingw64/include/c++/16.1.0/ios \
   C:/msys64/mingw64/include/c++/16.1.0/iosfwd \

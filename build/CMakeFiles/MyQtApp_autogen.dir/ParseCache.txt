@@ -10,6 +10,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/QtCore/QProcess
  mdp:C:/msys64/mingw64/include/QtCore/QSettings
  mdp:C:/msys64/mingw64/include/QtCore/QString
+ mdp:C:/msys64/mingw64/include/QtCore/QThread
  mdp:C:/msys64/mingw64/include/QtCore/qalgorithms.h
  mdp:C:/msys64/mingw64/include/QtCore/qarraydata.h
  mdp:C:/msys64/mingw64/include/QtCore/qatomic.h
@@ -26,7 +27,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreevent.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatastream.h
  mdp:C:/msys64/mingw64/include/QtCore/qdatetime.h
+ mdp:C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h
  mdp:C:/msys64/mingw64/include/QtCore/qdir.h
+ mdp:C:/msys64/mingw64/include/QtCore/qelapsedtimer.h
  mdp:C:/msys64/mingw64/include/QtCore/qeventloop.h
  mdp:C:/msys64/mingw64/include/QtCore/qfile.h
  mdp:C:/msys64/mingw64/include/QtCore/qfiledevice.h
@@ -74,6 +77,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/QtCore/qsysinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qsystemdetection.h
  mdp:C:/msys64/mingw64/include/QtCore/qtcore-config.h
+ mdp:C:/msys64/mingw64/include/QtCore/qthread.h
  mdp:C:/msys64/mingw64/include/QtCore/qtypeinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qvariant.h
  mdp:C:/msys64/mingw64/include/QtCore/qvarlengtharray.h
@@ -105,7 +109,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/QtGui/qwindowdefs.h
  mdp:C:/msys64/mingw64/include/QtGui/qwindowdefs_win.h
  mdp:C:/msys64/mingw64/include/QtSql/QSqlDatabase
+ mdp:C:/msys64/mingw64/include/QtSql/QSqlQuery
  mdp:C:/msys64/mingw64/include/QtSql/qsqldatabase.h
+ mdp:C:/msys64/mingw64/include/QtSql/qsqlquery.h
  mdp:C:/msys64/mingw64/include/QtSql/qtsql-config.h
  mdp:C:/msys64/mingw64/include/QtSql/qtsqlglobal.h
  mdp:C:/msys64/mingw64/include/QtWidgets/QApplication
@@ -262,6 +268,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ext/string_conversions.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ext/type_traits.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/functional
+ mdp:C:/msys64/mingw64/include/c++/16.1.0/future
  mdp:C:/msys64/mingw64/include/c++/16.1.0/initializer_list
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ios
  mdp:C:/msys64/mingw64/include/c++/16.1.0/iosfwd
@@ -358,6 +365,10 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/DoctorSpeciality.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.cpp
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Appointments.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Doctor.h
@@ -663,6 +674,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
  mdp:C:/msys64/mingw64/include/QtCore/QProcess
  mdp:C:/msys64/mingw64/include/QtCore/QSettings
  mdp:C:/msys64/mingw64/include/QtCore/QString
+ mdp:C:/msys64/mingw64/include/QtCore/QThread
  mdp:C:/msys64/mingw64/include/QtCore/qalgorithms.h
  mdp:C:/msys64/mingw64/include/QtCore/qarraydata.h
  mdp:C:/msys64/mingw64/include/QtCore/qatomic.h
@@ -677,7 +689,9 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
  mdp:C:/msys64/mingw64/include/QtCore/qcontainertools_impl.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreapplication.h
  mdp:C:/msys64/mingw64/include/QtCore/qcoreevent.h
+ mdp:C:/msys64/mingw64/include/QtCore/qdeadlinetimer.h
  mdp:C:/msys64/mingw64/include/QtCore/qdir.h
+ mdp:C:/msys64/mingw64/include/QtCore/qelapsedtimer.h
  mdp:C:/msys64/mingw64/include/QtCore/qeventloop.h
  mdp:C:/msys64/mingw64/include/QtCore/qfile.h
  mdp:C:/msys64/mingw64/include/QtCore/qfiledevice.h
@@ -717,6 +731,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
  mdp:C:/msys64/mingw64/include/QtCore/qsysinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qsystemdetection.h
  mdp:C:/msys64/mingw64/include/QtCore/qtcore-config.h
+ mdp:C:/msys64/mingw64/include/QtCore/qthread.h
  mdp:C:/msys64/mingw64/include/QtCore/qtypeinfo.h
  mdp:C:/msys64/mingw64/include/QtCore/qvariant.h
  mdp:C:/msys64/mingw64/include/QtCore/qvarlengtharray.h
@@ -867,6 +882,7 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ext/string_conversions.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ext/type_traits.h
  mdp:C:/msys64/mingw64/include/c++/16.1.0/functional
+ mdp:C:/msys64/mingw64/include/c++/16.1.0/future
  mdp:C:/msys64/mingw64/include/c++/16.1.0/initializer_list
  mdp:C:/msys64/mingw64/include/c++/16.1.0/ios
  mdp:C:/msys64/mingw64/include/c++/16.1.0/iosfwd
@@ -947,9 +963,6 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Appointments.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.cpp
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/DoctorSpeciality.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Patient.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/Speciality.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h
@@ -1224,6 +1237,16 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h
  mdp:C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/db/models/TableEnums.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/AppointmentsRepo.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorRepo.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp
+ uic:./ui_mainwindow.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorSpecialityRepo.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/msys64/mingw64/include/QtCore/qalgorithms.h
@@ -1537,24 +1560,13 @@ H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/build/MyQtApp_autogen/moc_predefs.h
  mdp:H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/app/application.cpp
+H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/DatabaseManager.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/PostgresSettings.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/ServerManager.cpp
-H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorSpecialityRepo.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/ui/mainwindow.cpp
- uic:./ui_mainwindow.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/AppointmentsRepo.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorRepo.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.h
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/AppointmentsRepo.cpp
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/DoctorService.cpp
+H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/DoctorRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/PatientRepo.cpp
 H:/GitHub/CPS_CPP_QT_Testovoe/src/db/repos/SpecialityRepo.cpp
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/AppointmentsService.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/db/services/PatientService.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.h
-H:/GitHub/CPS_CPP_QT_Testovoe/src/app/exmpl/AppExmpl.cpp
+H:/GitHub/CPS_CPP_QT_Testovoe/src/main.cpp
