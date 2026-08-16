@@ -29,7 +29,7 @@ bool AppointmentsRepo::createTable(QString &errorMessage) const
             id                   SERIAL PRIMARY KEY,
             patient_id           INT NOT NULL REFERENCES patients(id) ON DELETE CASCADE,
             doctor_id            INT NOT NULL REFERENCES doctors(id) ON DELETE CASCADE,
-            doctor_specialty_id  INT NOT NULL REFERENCES doctor_specialties(id) ON DELETE CASCADE,
+            doctor_speciality_id  INT NOT NULL REFERENCES doctor_speciality(id) ON DELETE CASCADE,
             start_datetime       TIMESTAMPTZ NOT NULL,
             status               VARCHAR(20) NOT NULL DEFAULT 'Подтверждена'
                                  CHECK (status IN (
@@ -102,14 +102,14 @@ bool AppointmentsRepo::insert(const Appointments &appointment, int &outId, QStri
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "INSERT INTO appointments (patient_id, doctor_id, doctor_specialty_id, start_datetime, status) "
-        "VALUES (:patient_id, :doctor_id, :doctor_specialty_id, :start_datetime, :status) "
+        "INSERT INTO appointments (patient_id, doctor_id, doctor_speciality_id, start_datetime, status) "
+        "VALUES (:patient_id, :doctor_id, :doctor_speciality_id, :start_datetime, :status) "
         "RETURNING id"
     ));
 
     query.bindValue(QStringLiteral(":patient_id"),          appointment.patient_id);
     query.bindValue(QStringLiteral(":doctor_id"),           appointment.doctor_id);
-    query.bindValue(QStringLiteral(":doctor_specialty_id"), appointment.doctor_specialty_id);
+    query.bindValue(QStringLiteral(":doctor_speciality_id"), appointment.doctor_speciality_id);
     query.bindValue(QStringLiteral(":start_datetime"),      appointment.start_datetime);
     query.bindValue(QStringLiteral(":status"),              appointmentStatusToDbString(appointment.status));
 
@@ -186,7 +186,7 @@ bool AppointmentsRepo::findById(int id, Appointments &outAppointment, QString &e
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "SELECT id, patient_id, doctor_id, doctor_specialty_id, start_datetime, status, "
+        "SELECT id, patient_id, doctor_id, doctor_speciality_id, start_datetime, status, "
         "created_at, updated_at "
         "FROM appointments WHERE id = :id"
     ));
@@ -208,7 +208,7 @@ bool AppointmentsRepo::findById(int id, Appointments &outAppointment, QString &e
     outAppointment.id                   = query.value(QStringLiteral("id")).toInt();
     outAppointment.patient_id           = query.value(QStringLiteral("patient_id")).toInt();
     outAppointment.doctor_id            = query.value(QStringLiteral("doctor_id")).toInt();
-    outAppointment.doctor_specialty_id  = query.value(QStringLiteral("doctor_specialty_id")).toInt();
+    outAppointment.doctor_speciality_id  = query.value(QStringLiteral("doctor_speciality_id")).toInt();
     outAppointment.start_datetime       = query.value(QStringLiteral("start_datetime")).toDateTime();
     outAppointment.created_at           = query.value(QStringLiteral("created_at")).toDateTime();
     outAppointment.updated_at           = query.value(QStringLiteral("updated_at")).toDateTime();
@@ -247,7 +247,7 @@ bool AppointmentsRepo::update(const Appointments &appointment, QString &errorMes
         "UPDATE appointments SET "
         "patient_id = :patient_id, "
         "doctor_id = :doctor_id, "
-        "doctor_specialty_id = :doctor_specialty_id, "
+        "doctor_speciality_id = :doctor_speciality_id, "
         "start_datetime = :start_datetime, "
         "status = :status, "
         "updated_at = NOW() "
@@ -256,7 +256,7 @@ bool AppointmentsRepo::update(const Appointments &appointment, QString &errorMes
 
     query.bindValue(QStringLiteral(":patient_id"),          appointment.patient_id);
     query.bindValue(QStringLiteral(":doctor_id"),           appointment.doctor_id);
-    query.bindValue(QStringLiteral(":doctor_specialty_id"), appointment.doctor_specialty_id);
+    query.bindValue(QStringLiteral(":doctor_speciality_id"), appointment.doctor_speciality_id);
     query.bindValue(QStringLiteral(":start_datetime"),      appointment.start_datetime);
     query.bindValue(QStringLiteral(":status"),              appointmentStatusToDbString(appointment.status));
     query.bindValue(QStringLiteral(":id"),                  appointment.id);
@@ -298,7 +298,7 @@ bool AppointmentsRepo::listAll(QVector<Appointments> &outAppointments, QString &
 
     QSqlQuery query(db);
     if (!query.exec(QStringLiteral(
-        "SELECT id, patient_id, doctor_id, doctor_specialty_id, start_datetime, status, "
+        "SELECT id, patient_id, doctor_id, doctor_speciality_id, start_datetime, status, "
         "created_at, updated_at "
         "FROM appointments ORDER BY id"
     ))) {
@@ -313,7 +313,7 @@ bool AppointmentsRepo::listAll(QVector<Appointments> &outAppointments, QString &
         a.id                   = query.value(QStringLiteral("id")).toInt();
         a.patient_id           = query.value(QStringLiteral("patient_id")).toInt();
         a.doctor_id            = query.value(QStringLiteral("doctor_id")).toInt();
-        a.doctor_specialty_id  = query.value(QStringLiteral("doctor_specialty_id")).toInt();
+        a.doctor_speciality_id  = query.value(QStringLiteral("doctor_speciality_id")).toInt();
         a.start_datetime       = query.value(QStringLiteral("start_datetime")).toDateTime();
         a.created_at           = query.value(QStringLiteral("created_at")).toDateTime();
         a.updated_at           = query.value(QStringLiteral("updated_at")).toDateTime();

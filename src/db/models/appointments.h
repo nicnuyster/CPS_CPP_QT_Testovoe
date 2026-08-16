@@ -9,7 +9,7 @@ struct Appointments {
 
     int patient_id = 0;               
     int doctor_id = 0;                
-    int doctor_specialty_id = 0;      
+    int doctor_speciality_id = 0;      
 
     QDateTime start_datetime;         // NOT NULL
 

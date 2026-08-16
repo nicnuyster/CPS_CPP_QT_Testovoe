@@ -30,7 +30,7 @@ bool PatientService::createPatient(const Patient &patient, int &outId, QString &
     }
 
     QSqlQuery checkSnils(db);
-    checkSnils.prepare(QStringLiteral("SELECT id FROM patients WHERE snils = :snils"));
+    checkSnils.prepare(QStringLiteral("SELECT id FROM patient WHERE snils = :snils"));
     checkSnils.bindValue(QStringLiteral(":snils"), patient.snils);
     if (!checkSnils.exec()) {
         errorMessage = QStringLiteral("PatientService: failed to check SNILS: %1").arg(checkSnils.lastError().text());
@@ -45,7 +45,7 @@ bool PatientService::createPatient(const Patient &patient, int &outId, QString &
     }
 
     QSqlQuery checkPolis(db);
-    checkPolis.prepare(QStringLiteral("SELECT id FROM patients WHERE polis = :polis"));
+    checkPolis.prepare(QStringLiteral("SELECT id FROM patient WHERE polis = :polis"));
     checkPolis.bindValue(QStringLiteral(":polis"), patient.polis);
     if (!checkPolis.exec()) {
         errorMessage = QStringLiteral("PatientService: failed to check POLIS: %1").arg(checkPolis.lastError().text());

@@ -77,13 +77,13 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
         return false;
     }
 
-    QVector<Doctor> doctors;
-    if (!doctorRepo.listAll(doctors, errorMessage)) {
+    QVector<Doctor> doctor;
+    if (!doctorRepo.listAll(doctor, errorMessage)) {
         return false;
     }
 
-    QVector<DoctorSpecialty> doctorSpecialties;
-    if (!doctorSpecialityRepo.listAll(doctorSpecialties, errorMessage)) {
+    QVector<DoctorSpeciality> doctorSpeciality;
+    if (!doctorSpecialityRepo.listAll(doctorSpeciality, errorMessage)) {
         return false;
     }
 
@@ -97,12 +97,12 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
         qWarning() << errorMessage;
         return false;
     }
-    if (doctors.isEmpty()) {
+    if (doctor.isEmpty()) {
         errorMessage = "AppExmpl: no doctors to seed appointments.";
         qWarning() << errorMessage;
         return false;
     }
-    if (doctorSpecialties.isEmpty()) {
+    if (doctorSpeciality.isEmpty()) {
         errorMessage = "AppExmpl: no doctor_specialties to seed appointments.";
         qWarning() << errorMessage;
         return false;
@@ -112,8 +112,8 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
     for (int i = 0; i < 5; ++i) {
         Appointments appt;
         appt.patient_id          = patients.at(i % patients.size()).id;
-        appt.doctor_id           = doctors.at(i % doctors.size()).id;
-        appt.doctor_specialty_id = doctorSpecialties.at(i % doctorSpecialties.size()).id;
+        appt.doctor_id           = doctor.at(i % doctor.size()).id;
+        appt.doctor_speciality_id = doctorSpeciality.at(i % doctorSpeciality.size()).id;
         appt.start_datetime      = QDateTime(baseDate.addDays(i), startTime);
         appt.status              = TableEnums::AppointmentStatus::Confirmed;
 

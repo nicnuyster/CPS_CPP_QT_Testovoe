@@ -25,7 +25,7 @@ bool PatientRepo::createTable(QString &errorMessage) const
     }
 
     const QString sql = QStringLiteral(R"sql(
-        CREATE TABLE IF NOT EXISTS patients (
+        CREATE TABLE IF NOT EXISTS patient (
             id            SERIAL PRIMARY KEY,
             first_name    VARCHAR(100) NOT NULL,
             family_name   VARCHAR(100) NOT NULL,
@@ -46,13 +46,13 @@ bool PatientRepo::createTable(QString &errorMessage) const
 
     QSqlQuery query(db);
     if (!query.exec(sql)) {
-        errorMessage = QStringLiteral("Failed to create table 'patients': %1")
+        errorMessage = QStringLiteral("Failed to create table 'patient': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "PatientRepo: table 'patients' created (or already exists).";
+    qDebug() << "PatientRepo: table 'patient' created (or already exists).";
     errorMessage.clear();
     return true;
 }
@@ -73,14 +73,14 @@ bool PatientRepo::dropTable(QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS patients CASCADE"))) {
-        errorMessage = QStringLiteral("Failed to drop table 'patients': %1")
+    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS patient CASCADE"))) {
+        errorMessage = QStringLiteral("Failed to drop table 'patient': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "PatientRepo: table 'patients' dropped.";
+    qDebug() << "PatientRepo: table 'patient' dropped.";
     errorMessage.clear();
     return true;
 }
@@ -107,7 +107,7 @@ bool PatientRepo::insert(const Patient &patient, int &outId, QString &errorMessa
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "INSERT INTO patients (first_name, family_name, father_name, address, phone, "
+        "INSERT INTO patient (first_name, family_name, father_name, address, phone, "
         "job, education, sex, date_of_birth, snils, polis) "
         "VALUES (:first_name, :family_name, :father_name, :address, :phone, "
         ":job, :education, :sex, :date_of_birth, :snils, :polis) "
@@ -161,7 +161,7 @@ bool PatientRepo::remove(int id, QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    query.prepare(QStringLiteral("DELETE FROM patients WHERE id = :id"));
+    query.prepare(QStringLiteral("DELETE FROM patient WHERE id = :id"));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
@@ -201,7 +201,7 @@ bool PatientRepo::findById(int id, Patient &outPatient, QString &errorMessage)
     query.prepare(QStringLiteral(
         "SELECT id, first_name, family_name, father_name, address, phone, job, education, "
         "sex, date_of_birth, snils, polis, created_at, updated_at "
-        "FROM patients WHERE id = :id"
+        "FROM patient WHERE id = :id"
     ));
     query.bindValue(QStringLiteral(":id"), id);
 
@@ -263,7 +263,7 @@ bool PatientRepo::update(const Patient &patient, QString &errorMessage)
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "UPDATE patients SET "
+        "UPDATE patient SET "
         "first_name = :first_name, "
         "family_name = :family_name, "
         "father_name = :father_name, "
@@ -310,7 +310,7 @@ bool PatientRepo::update(const Patient &patient, QString &errorMessage)
     return true;
 }
 
-bool PatientRepo::listAll(QVector<Patient> &outPatients, QString &errorMessage)
+bool PatientRepo::listAll(QVector<Patient> &outpatient, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("PatientRepo: DatabaseManager is null.");
@@ -325,15 +325,15 @@ bool PatientRepo::listAll(QVector<Patient> &outPatients, QString &errorMessage)
         return false;
     }
 
-    outPatients.clear();
+    outpatient.clear();
 
     QSqlQuery query(db);
     if (!query.exec(QStringLiteral(
         "SELECT id, first_name, family_name, father_name, address, phone, job, education, "
         "sex, date_of_birth, snils, polis, created_at, updated_at "
-        "FROM patients ORDER BY id"
+        "FROM patient ORDER BY id"
     ))) {
-        errorMessage = QStringLiteral("Failed to list patients: %1")
+        errorMessage = QStringLiteral("Failed to list patient: %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -358,10 +358,10 @@ bool PatientRepo::listAll(QVector<Patient> &outPatients, QString &errorMessage)
         p.polis         = query.value(QStringLiteral("polis")).toString();
         p.created_at    = query.value(QStringLiteral("created_at")).toDateTime();
         p.updated_at    = query.value(QStringLiteral("updated_at")).toDateTime();
-        outPatients.append(p);
+        outpatient.append(p);
     }
 
-    qDebug() << "PatientRepo: listed" << outPatients.size() << "patients.";
+    qDebug() << "PatientRepo: listed" << outpatient.size() << "patient.";
     errorMessage.clear();
     return true;
 }

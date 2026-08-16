@@ -1,10 +1,10 @@
-#ifndef DOCTOR_SPECIALTY_H
-#define DOCTOR_SPECIALTY_H
+#ifndef DOCTOR_SPECIALITY_H
+#define DOCTOR_SPECIALITY_H
 
-struct DoctorSpecialty {
+struct DoctorSpeciality {
     int id = 0;              
     int doctor_id = 0;       
-    int specialty_id = 0;    
+    int speciality_id = 0;    
 };
 
-#endif // DOCTOR_SPECIALTY_H
+#endif // DOCTOR_SPECIALITY_H

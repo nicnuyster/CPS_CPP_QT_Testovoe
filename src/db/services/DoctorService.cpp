@@ -31,7 +31,7 @@ bool DoctorService::createDoctor(const Doctor &doctor, int &outId, QString &erro
 
     QSqlQuery checkDup(db);
     checkDup.prepare(QStringLiteral(
-        "SELECT id FROM doctors "
+        "SELECT id FROM doctor "
         "WHERE first_name = :first_name "
         "  AND family_name = :family_name "
         "  AND (father_name = :father_name OR (father_name IS NULL AND :father_name IS NULL)) "

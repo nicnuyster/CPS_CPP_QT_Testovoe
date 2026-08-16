@@ -25,7 +25,7 @@ bool SpecialityRepo::createTable(QString &errorMessage) const
     }
 
     const QString sql = QStringLiteral(R"sql(
-        CREATE TABLE IF NOT EXISTS specialties (
+        CREATE TABLE IF NOT EXISTS speciality (
             id                   SERIAL PRIMARY KEY,
             name                 VARCHAR(50) UNIQUE NOT NULL,
             time_in_appointment  INT NOT NULL CHECK (time_in_appointment > 0)
@@ -34,13 +34,13 @@ bool SpecialityRepo::createTable(QString &errorMessage) const
 
     QSqlQuery query(db);
     if (!query.exec(sql)) {
-        errorMessage = QStringLiteral("Failed to create table 'specialties': %1")
+        errorMessage = QStringLiteral("Failed to create table 'speciality': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "SpecialityRepo: table 'specialties' created (or already exists).";
+    qDebug() << "SpecialityRepo: table 'speciality' created (or already exists).";
     errorMessage.clear();
     return true;
 }
@@ -61,20 +61,20 @@ bool SpecialityRepo::dropTable(QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS specialties CASCADE"))) {
-        errorMessage = QStringLiteral("Failed to drop table 'specialties': %1")
+    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS speciality CASCADE"))) {
+        errorMessage = QStringLiteral("Failed to drop table 'speciality': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "SpecialtyRepo: table 'specialties' dropped.";
+    qDebug() << "SpecialityRepo: table 'speciality' dropped.";
     errorMessage.clear();
     return true;
 }
 
 //
-bool SpecialityRepo::insert(const Specialty &specialty, int &outId, QString &errorMessage)
+bool SpecialityRepo::insert(const Speciality &speciality, int &outId, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("SpecialityRepo: DatabaseManager is null.");
@@ -91,13 +91,13 @@ bool SpecialityRepo::insert(const Specialty &specialty, int &outId, QString &err
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "INSERT INTO specialties (name, time_in_appointment) "
+        "INSERT INTO speciality (name, time_in_appointment) "
         "VALUES (:name, :time_in_appointment) "
         "RETURNING id"
     ));
 
-    query.bindValue(QStringLiteral(":name"),                 specialty.name);
-    query.bindValue(QStringLiteral(":time_in_appointment"),  specialty.time_in_appointment);
+    query.bindValue(QStringLiteral(":name"),                 speciality.name);
+    query.bindValue(QStringLiteral(":time_in_appointment"),  speciality.time_in_appointment);
 
     if (!query.exec()) {
         errorMessage = QStringLiteral("Failed to insert speciality: %1")
@@ -108,7 +108,7 @@ bool SpecialityRepo::insert(const Specialty &specialty, int &outId, QString &err
 
     if (query.next()) {
         outId = query.value(0).toInt();
-        qDebug() << "SpecialityRepo: inserted specialty with id=" << outId;
+        qDebug() << "SpecialityRepo: inserted speciality with id=" << outId;
         errorMessage.clear();
         return true;
     }
@@ -134,7 +134,7 @@ bool SpecialityRepo::remove(int id, QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    query.prepare(QStringLiteral("DELETE FROM specialties WHERE id = :id"));
+    query.prepare(QStringLiteral("DELETE FROM speciality WHERE id = :id"));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
@@ -145,17 +145,17 @@ bool SpecialityRepo::remove(int id, QString &errorMessage)
     }
 
     if (query.numRowsAffected() == 0) {
-        errorMessage = QStringLiteral("SpecialityRepo: no specialty found with id=%1.").arg(id);
+        errorMessage = QStringLiteral("SpecialityRepo: no speciality found with id=%1.").arg(id);
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "SpecialityRepo: deleted specialty id=" << id;
+    qDebug() << "SpecialityRepo: deleted speciality id=" << id;
     errorMessage.clear();
     return true;
 }
 
-bool SpecialityRepo::findById(int id, Specialty &outSpecialty, QString &errorMessage)
+bool SpecialityRepo::findById(int id, Speciality &outSpeciality, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("SpecialityRepo: DatabaseManager is null.");
@@ -173,32 +173,32 @@ bool SpecialityRepo::findById(int id, Specialty &outSpecialty, QString &errorMes
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
         "SELECT id, name, time_in_appointment "
-        "FROM specialties WHERE id = :id"
+        "FROM speciality WHERE id = :id"
     ));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to select specialty (id=%1): %2")
+        errorMessage = QStringLiteral("Failed to select speciality (id=%1): %2")
                        .arg(id).arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
     if (!query.next()) {
-        errorMessage = QStringLiteral("SpecialityRepo: specialty with id=%1 not found.").arg(id);
+        errorMessage = QStringLiteral("SpecialityRepo: speciality with id=%1 not found.").arg(id);
         qWarning() << errorMessage;
         return false;
     }
 
-    outSpecialty.id                   = query.value(QStringLiteral("id")).toInt();
-    outSpecialty.name                 = query.value(QStringLiteral("name")).toString();
-    outSpecialty.time_in_appointment  = query.value(QStringLiteral("time_in_appointment")).toInt();
+    outSpeciality.id                   = query.value(QStringLiteral("id")).toInt();
+    outSpeciality.name                 = query.value(QStringLiteral("name")).toString();
+    outSpeciality.time_in_appointment  = query.value(QStringLiteral("time_in_appointment")).toInt();
 
     errorMessage.clear();
     return true;
 }
 
-bool SpecialityRepo::update(const Specialty &specialty, QString &errorMessage)
+bool SpecialityRepo::update(const Speciality &speciality, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("SpecialityRepo: DatabaseManager is null.");
@@ -215,35 +215,35 @@ bool SpecialityRepo::update(const Specialty &specialty, QString &errorMessage)
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "UPDATE specialties SET "
+        "UPDATE speciality SET "
         "name = :name, "
         "time_in_appointment = :time_in_appointment "
         "WHERE id = :id"
     ));
 
-    query.bindValue(QStringLiteral(":name"),                 specialty.name);
-    query.bindValue(QStringLiteral(":time_in_appointment"),  specialty.time_in_appointment);
-    query.bindValue(QStringLiteral(":id"),                   specialty.id);
+    query.bindValue(QStringLiteral(":name"),                 speciality.name);
+    query.bindValue(QStringLiteral(":time_in_appointment"),  speciality.time_in_appointment);
+    query.bindValue(QStringLiteral(":id"),                   speciality.id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to update specialty (id=%1): %2")
-                       .arg(specialty.id).arg(query.lastError().text());
+        errorMessage = QStringLiteral("Failed to update speciality (id=%1): %2")
+                       .arg(speciality.id).arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
     if (query.numRowsAffected() == 0) {
-        errorMessage = QStringLiteral("SpecialityRepo: no specialty found with id=%1 to update.").arg(specialty.id);
+        errorMessage = QStringLiteral("SpecialityRepo: no speciality found with id=%1 to update.").arg(speciality.id);
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "SpecialityRepo: updated specialty id=" << specialty.id;
+    qDebug() << "SpecialityRepo: updated speciality id=" << speciality.id;
     errorMessage.clear();
     return true;
 }
 
-bool SpecialityRepo::listAll(QVector<Specialty> &outSpecialties, QString &errorMessage)
+bool SpecialityRepo::listAll(QVector<Speciality> &outspeciality, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("SpecialityRepo: DatabaseManager is null.");
@@ -258,28 +258,28 @@ bool SpecialityRepo::listAll(QVector<Specialty> &outSpecialties, QString &errorM
         return false;
     }
 
-    outSpecialties.clear();
+    outspeciality.clear();
 
     QSqlQuery query(db);
     if (!query.exec(QStringLiteral(
         "SELECT id, name, time_in_appointment "
-        "FROM specialties ORDER BY id"
+        "FROM speciality ORDER BY id"
     ))) {
-        errorMessage = QStringLiteral("Failed to list specialties: %1")
+        errorMessage = QStringLiteral("Failed to list speciality: %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
     while (query.next()) {
-        Specialty s;
+        Speciality s;
         s.id                   = query.value(QStringLiteral("id")).toInt();
         s.name                 = query.value(QStringLiteral("name")).toString();
         s.time_in_appointment  = query.value(QStringLiteral("time_in_appointment")).toInt();
-        outSpecialties.append(s);
+        outspeciality.append(s);
     }
 
-    qDebug() << "SpecialityRepo: listed" << outSpecialties.size() << "specialties.";
+    qDebug() << "SpecialityRepo: listed" << outspeciality.size() << "speciality.";
     errorMessage.clear();
     return true;
 }

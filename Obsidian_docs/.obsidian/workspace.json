@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Без названия.md",
+                "file": "БД архитектура/таблицы/doctor_specialty.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "doctor_specialty"
             }
           }
         ],
@@ -203,8 +203,8 @@
   },
   "active": "ff47d1ab46ea21a2",
   "lastOpenFiles": [
-    "Задание.md",
     "Без названия.md",
+    "Задание.md",
     "БД архитектура/таблицы/Specialty.md",
     "БД архитектура/таблицы/Patients.md",
     "БД архитектура/таблицы/doctor_specialty.md",

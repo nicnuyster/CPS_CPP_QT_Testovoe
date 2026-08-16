@@ -25,7 +25,7 @@ bool DoctorRepo::createTable(QString &errorMessage) const
     }
 
     const QString sql = QStringLiteral(R"sql(
-        CREATE TABLE IF NOT EXISTS doctors (
+        CREATE TABLE IF NOT EXISTS doctor (
             id            SERIAL PRIMARY KEY,
             first_name    VARCHAR(30) NOT NULL,
             family_name   VARCHAR(30) NOT NULL,
@@ -38,13 +38,13 @@ bool DoctorRepo::createTable(QString &errorMessage) const
 
     QSqlQuery query(db);
     if (!query.exec(sql)) {
-        errorMessage = QStringLiteral("Failed to create table 'doctors': %1")
+        errorMessage = QStringLiteral("Failed to create table 'doctor': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "DoctorRepo: table 'doctors' created (or already exists).";
+    qDebug() << "DoctorRepo: table 'doctor' created (or already exists).";
     errorMessage.clear();
     return true;
 }
@@ -65,14 +65,14 @@ bool DoctorRepo::dropTable(QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS doctors CASCADE"))) {
-        errorMessage = QStringLiteral("Failed to drop table 'doctors': %1")
+    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS doctor CASCADE"))) {
+        errorMessage = QStringLiteral("Failed to drop table 'doctor': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "DoctorRepo: table 'doctors' dropped.";
+    qDebug() << "DoctorRepo: table 'doctor' dropped.";
     errorMessage.clear();
     return true;
 }
@@ -95,7 +95,7 @@ bool DoctorRepo::insert(const Doctor &doctor, int &outId, QString &errorMessage)
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "INSERT INTO doctors (first_name, family_name, father_name, phone) "
+        "INSERT INTO doctor (first_name, family_name, father_name, phone) "
         "VALUES (:first_name, :family_name, :father_name, :phone) "
         "RETURNING id"
     ));
@@ -140,7 +140,7 @@ bool DoctorRepo::remove(int id, QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    query.prepare(QStringLiteral("DELETE FROM doctors WHERE id = :id"));
+    query.prepare(QStringLiteral("DELETE FROM doctor WHERE id = :id"));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
@@ -179,7 +179,7 @@ bool DoctorRepo::findById(int id, Doctor &outDoctor, QString &errorMessage)
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
         "SELECT id, first_name, family_name, father_name, phone, created_at, updated_at "
-        "FROM doctors WHERE id = :id"
+        "FROM doctor WHERE id = :id"
     ));
     query.bindValue(QStringLiteral(":id"), id);
 
@@ -208,7 +208,7 @@ bool DoctorRepo::findById(int id, Doctor &outDoctor, QString &errorMessage)
     return true;
 }
 
-bool DoctorRepo::listAll(QVector<Doctor> &outDoctors, QString &errorMessage)
+bool DoctorRepo::listAll(QVector<Doctor> &outDoctor, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("DoctorRepo: DatabaseManager is null.");
@@ -223,14 +223,14 @@ bool DoctorRepo::listAll(QVector<Doctor> &outDoctors, QString &errorMessage)
         return false;
     }
 
-    outDoctors.clear();
+    outDoctor.clear();
 
     QSqlQuery query(db);
     if (!query.exec(QStringLiteral(
         "SELECT id, first_name, family_name, father_name, phone, created_at, updated_at "
-        "FROM doctors ORDER BY id"
+        "FROM doctor ORDER BY id"
     ))) {
-        errorMessage = QStringLiteral("Failed to list doctors: %1")
+        errorMessage = QStringLiteral("Failed to list doctor: %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -245,10 +245,10 @@ bool DoctorRepo::listAll(QVector<Doctor> &outDoctors, QString &errorMessage)
         d.phone       = query.value(QStringLiteral("phone")).toString();
         d.created_at  = query.value(QStringLiteral("created_at")).toDateTime();
         d.updated_at  = query.value(QStringLiteral("updated_at")).toDateTime();
-        outDoctors.append(d);
+        outDoctor.append(d);
     }
 
-    qDebug() << "DoctorRepo: listed" << outDoctors.size() << "doctors.";
+    qDebug() << "DoctorRepo: listed" << outDoctor.size() << "doctor.";
     errorMessage.clear();
     return true;
 }
@@ -270,7 +270,7 @@ bool DoctorRepo::update(const Doctor &doctor, QString &errorMessage)
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "UPDATE doctors SET "
+        "UPDATE doctor SET "
         "first_name = :first_name, "
         "family_name = :family_name, "
         "father_name = :father_name, "

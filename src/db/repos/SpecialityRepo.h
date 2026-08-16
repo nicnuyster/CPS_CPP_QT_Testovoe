@@ -15,14 +15,14 @@ public:
     bool createTable(QString &errorMessage) const;
     bool dropTable(QString &errorMessage);
 
-    bool insert(const Specialty &specialty, int &outId, QString &errorMessage);
+    bool insert(const Speciality &speciality, int &outId, QString &errorMessage);
     bool remove(int id, QString &errorMessage);
-    bool findById(int id, Specialty &outSpecialty, QString &errorMessage);
-    bool update(const Specialty &specialty, QString &errorMessage);
-    bool listAll(QVector<Specialty> &outSpecialties, QString &errorMessage);
+    bool findById(int id, Speciality &outSpeciality, QString &errorMessage);
+    bool update(const Speciality &speciality, QString &errorMessage);
+    bool listAll(QVector<Speciality> &outSpeciality, QString &errorMessage);
 
 private:
     DatabaseManager *m_dbManager;
 };
 
-#endif // SPECIALTYREPO_H
+#endif // SPECIALITYREPO_H

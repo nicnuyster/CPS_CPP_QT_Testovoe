@@ -16,8 +16,8 @@ bool AppointmentsService::fetchDuration(int doctorSpecialtyId, int &outDurationM
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
         "SELECT s.time_in_appointment "
-        "FROM doctor_specialties ds "
-        "JOIN specialties s ON ds.specialty_id = s.id "
+        "FROM doctor_speciality ds "
+        "JOIN speciality s ON ds.speciality_id = s.id "
         "WHERE ds.id = :ds_id"
     ));
     query.bindValue(QStringLiteral(":ds_id"), doctorSpecialtyId);
@@ -46,8 +46,8 @@ bool AppointmentsService::checkDoctorAvailability(int doctorId, int excludeId,
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
         "SELECT COUNT(*) FROM appointments a "
-        "JOIN doctor_specialties ds ON a.doctor_specialty_id = ds.id "
-        "JOIN specialties s ON ds.specialty_id = s.id "
+        "JOIN doctor_speciality ds ON a.doctor_speciality_id = ds.id "
+        "JOIN speciality s ON ds.speciality_id = s.id "
         "WHERE a.doctor_id = :doctor_id "
         "  AND a.id != :exclude_id "
         "  AND a.start_datetime < :new_end "
@@ -83,8 +83,8 @@ bool AppointmentsService::checkPatientAvailability(int patientId, int excludeId,
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
         "SELECT COUNT(*) FROM appointments a "
-        "JOIN doctor_specialties ds ON a.doctor_specialty_id = ds.id "
-        "JOIN specialties s ON ds.specialty_id = s.id "
+        "JOIN doctor_speciality ds ON a.doctor_speciality_id = ds.id "
+        "JOIN speciality s ON ds.speciality_id = s.id "
         "WHERE a.patient_id = :patient_id "
         "  AND a.id != :exclude_id "
         "  AND a.start_datetime < :new_end "
@@ -133,7 +133,7 @@ bool AppointmentsService::createAppointment(const Appointments &appointment, int
     }
 
     int durationMinutes = 0;
-    if (!fetchDuration(appointment.doctor_specialty_id, durationMinutes, errorMessage))
+    if (!fetchDuration(appointment.doctor_speciality_id, durationMinutes, errorMessage))
         return false;
 
     if (!m_dbManager->beginTransaction()) {

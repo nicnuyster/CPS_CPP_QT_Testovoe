@@ -25,23 +25,23 @@ bool DoctorSpecialityRepo::createTable(QString &errorMessage) const
     }
 
     const QString sql = QStringLiteral(R"sql(
-        CREATE TABLE IF NOT EXISTS doctor_specialties (
+        CREATE TABLE IF NOT EXISTS doctor_speciality (
             id            SERIAL PRIMARY KEY,
             doctor_id     INT NOT NULL REFERENCES doctors(id) ON DELETE CASCADE,
-            specialty_id  INT NOT NULL REFERENCES specialties(id) ON DELETE CASCADE,
-            UNIQUE (doctor_id, specialty_id)
+            speciality_id  INT NOT NULL REFERENCES speciality(id) ON DELETE CASCADE,
+            UNIQUE (doctor_id, speciality_id)
         )
     )sql");
 
     QSqlQuery query(db);
     if (!query.exec(sql)) {
-        errorMessage = QStringLiteral("Failed to create table 'doctor_specialties': %1")
+        errorMessage = QStringLiteral("Failed to create table 'doctor_speciality': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "DoctorSpecialityRepo: table 'doctor_specialties' created (or already exists).";
+    qDebug() << "DoctorSpecialityRepo: table 'doctor_speciality' created (or already exists).";
     errorMessage.clear();
     return true;
 }
@@ -62,20 +62,20 @@ bool DoctorSpecialityRepo::dropTable(QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS doctor_specialties CASCADE"))) {
-        errorMessage = QStringLiteral("Failed to drop table 'doctor_specialties': %1")
+    if (!query.exec(QStringLiteral("DROP TABLE IF EXISTS doctor_speciality CASCADE"))) {
+        errorMessage = QStringLiteral("Failed to drop table 'doctor_speciality': %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
-    qDebug() << "DoctorSpecialityRepo: table 'doctor_specialties' dropped.";
+    qDebug() << "DoctorSpecialityRepo: table 'doctor_speciality' dropped.";
     errorMessage.clear();
     return true;
 }
 
 //
-bool DoctorSpecialityRepo::insert(const DoctorSpecialty &ds, int &outId, QString &errorMessage)
+bool DoctorSpecialityRepo::insert(const DoctorSpeciality &ds, int &outId, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("DoctorSpecialityRepo: DatabaseManager is null.");
@@ -92,16 +92,16 @@ bool DoctorSpecialityRepo::insert(const DoctorSpecialty &ds, int &outId, QString
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "INSERT INTO doctor_specialties (doctor_id, specialty_id) "
-        "VALUES (:doctor_id, :specialty_id) "
+        "INSERT INTO doctor_speciality (doctor_id, speciality_id) "
+        "VALUES (:doctor_id, :speciality_id) "
         "RETURNING id"
     ));
 
     query.bindValue(QStringLiteral(":doctor_id"),    ds.doctor_id);
-    query.bindValue(QStringLiteral(":specialty_id"), ds.specialty_id);
+    query.bindValue(QStringLiteral(":speciality_id"), ds.speciality_id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to insert doctor_specialty: %1")
+        errorMessage = QStringLiteral("Failed to insert doctor_speciality: %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -135,11 +135,11 @@ bool DoctorSpecialityRepo::remove(int id, QString &errorMessage)
     }
 
     QSqlQuery query(db);
-    query.prepare(QStringLiteral("DELETE FROM doctor_specialties WHERE id = :id"));
+    query.prepare(QStringLiteral("DELETE FROM doctor_speciality WHERE id = :id"));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to delete doctor_specialty (id=%1): %2")
+        errorMessage = QStringLiteral("Failed to delete doctor_speciality (id=%1): %2")
                        .arg(id).arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -156,7 +156,7 @@ bool DoctorSpecialityRepo::remove(int id, QString &errorMessage)
     return true;
 }
 
-bool DoctorSpecialityRepo::findById(int id, DoctorSpecialty &outDS, QString &errorMessage)
+bool DoctorSpecialityRepo::findById(int id, DoctorSpeciality &outDS, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("DoctorSpecialityRepo: DatabaseManager is null.");
@@ -173,13 +173,13 @@ bool DoctorSpecialityRepo::findById(int id, DoctorSpecialty &outDS, QString &err
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "SELECT id, doctor_id, specialty_id "
-        "FROM doctor_specialties WHERE id = :id"
+        "SELECT id, doctor_id, speciality_id "
+        "FROM doctor_speciality WHERE id = :id"
     ));
     query.bindValue(QStringLiteral(":id"), id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to select doctor_specialty (id=%1): %2")
+        errorMessage = QStringLiteral("Failed to select doctor_speciality (id=%1): %2")
                        .arg(id).arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -193,13 +193,13 @@ bool DoctorSpecialityRepo::findById(int id, DoctorSpecialty &outDS, QString &err
 
     outDS.id           = query.value(QStringLiteral("id")).toInt();
     outDS.doctor_id    = query.value(QStringLiteral("doctor_id")).toInt();
-    outDS.specialty_id = query.value(QStringLiteral("specialty_id")).toInt();
+    outDS.speciality_id = query.value(QStringLiteral("speciality_id")).toInt();
 
     errorMessage.clear();
     return true;
 }
 
-bool DoctorSpecialityRepo::update(const DoctorSpecialty &ds, QString &errorMessage)
+bool DoctorSpecialityRepo::update(const DoctorSpeciality &ds, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("DoctorSpecialityRepo: DatabaseManager is null.");
@@ -216,18 +216,18 @@ bool DoctorSpecialityRepo::update(const DoctorSpecialty &ds, QString &errorMessa
 
     QSqlQuery query(db);
     query.prepare(QStringLiteral(
-        "UPDATE doctor_specialties SET "
+        "UPDATE doctor_speciality SET "
         "doctor_id = :doctor_id, "
-        "specialty_id = :specialty_id "
+        "speciality_id = :speciality_id "
         "WHERE id = :id"
     ));
 
     query.bindValue(QStringLiteral(":doctor_id"),    ds.doctor_id);
-    query.bindValue(QStringLiteral(":specialty_id"), ds.specialty_id);
+    query.bindValue(QStringLiteral(":speciality_id"), ds.speciality_id);
     query.bindValue(QStringLiteral(":id"),            ds.id);
 
     if (!query.exec()) {
-        errorMessage = QStringLiteral("Failed to update doctor_specialty (id=%1): %2")
+        errorMessage = QStringLiteral("Failed to update doctor_speciality (id=%1): %2")
                        .arg(ds.id).arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
@@ -244,7 +244,7 @@ bool DoctorSpecialityRepo::update(const DoctorSpecialty &ds, QString &errorMessa
     return true;
 }
 
-bool DoctorSpecialityRepo::listAll(QVector<DoctorSpecialty> &outDSList, QString &errorMessage)
+bool DoctorSpecialityRepo::listAll(QVector<DoctorSpeciality> &outDSList, QString &errorMessage)
 {
     if (!m_dbManager) {
         errorMessage = QStringLiteral("DoctorSpecialityRepo: DatabaseManager is null.");
@@ -263,20 +263,20 @@ bool DoctorSpecialityRepo::listAll(QVector<DoctorSpecialty> &outDSList, QString 
 
     QSqlQuery query(db);
     if (!query.exec(QStringLiteral(
-        "SELECT id, doctor_id, specialty_id "
-        "FROM doctor_specialties ORDER BY id"
+        "SELECT id, doctor_id, speciality_id "
+        "FROM doctor_speciality ORDER BY id"
     ))) {
-        errorMessage = QStringLiteral("Failed to list doctor_specialties: %1")
+        errorMessage = QStringLiteral("Failed to list doctor_speciality: %1")
                        .arg(query.lastError().text());
         qWarning() << errorMessage;
         return false;
     }
 
     while (query.next()) {
-        DoctorSpecialty ds;
+        DoctorSpeciality ds;
         ds.id           = query.value(QStringLiteral("id")).toInt();
         ds.doctor_id    = query.value(QStringLiteral("doctor_id")).toInt();
-        ds.specialty_id = query.value(QStringLiteral("specialty_id")).toInt();
+        ds.speciality_id = query.value(QStringLiteral("speciality_id")).toInt();
         outDSList.append(ds);
     }
 
