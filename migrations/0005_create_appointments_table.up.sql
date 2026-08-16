@@ -5,7 +5,7 @@ CREATE TABLE appointments (
 
     patient_id           INTEGER NOT NULL,
     doctor_id            INTEGER NOT NULL,
-    doctor_specialty_id  INTEGER NOT NULL,
+    doctor_speciality_id  INTEGER NOT NULL,
 
     start_datetime       TIMESTAMPTZ NOT NULL,
 
@@ -16,27 +16,27 @@ CREATE TABLE appointments (
 
     CONSTRAINT appointments_patient_fk
         FOREIGN KEY (patient_id)
-        REFERENCES patients (id)
+        REFERENCES patient (id)
         ON DELETE CASCADE,
 
     CONSTRAINT appointments_doctor_fk
         FOREIGN KEY (doctor_id)
-        REFERENCES doctors (id)
+        REFERENCES doctor (id)
         ON DELETE CASCADE,
 
-    CONSTRAINT appointments_doctor_specialty_fk
-        FOREIGN KEY (doctor_specialty_id)
-        REFERENCES doctor_specialties (id)
+    CONSTRAINT appointments_doctor_speciality_fk
+        FOREIGN KEY (doctor_speciality_id)
+        REFERENCES doctor_speciality (id)
         ON DELETE CASCADE
 );
 
 -- Example data
-INSERT INTO appointments (
-    patient_id,
-    doctor_id,
-    doctor_specialty_id,
-    start_datetime,
-    status
-)
+--INSERT INTO appointments (
+--    patient_id,
+--    doctor_id,
+--    doctor_specialty_id,
+--    start_datetime,
+--    status
+--)
 
 COMMIT;

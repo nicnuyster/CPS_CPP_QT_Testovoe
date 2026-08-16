@@ -1,37 +1,36 @@
 BEGIN;
 
-CREATE TABLE doctor_specialties (
+CREATE TABLE doctor_speciality (
     id            SERIAL PRIMARY KEY,
     doctor_id     INTEGER NOT NULL,
-    specialty_id  INTEGER NOT NULL,
+    speciality_id  INTEGER NOT NULL,
 
-    CONSTRAINT doctor_specialties_doctor_fk
+    CONSTRAINT doctor_speciality_doctor_fk
         FOREIGN KEY (doctor_id)
-        REFERENCES doctors (id)
+        REFERENCES doctor (id)
         ON DELETE CASCADE,
 
-    CONSTRAINT doctor_specialties_specialty_fk
-        FOREIGN KEY (specialty_id)
-        REFERENCES specialties (id)
+    CONSTRAINT doctor_speciality_speciality_fk
+        FOREIGN KEY (speciality_id)
+        REFERENCES speciality (id)
         ON DELETE CASCADE,
 
-    CONSTRAINT doctor_specialties_unique
-        UNIQUE (doctor_id, specialty_id)
+    CONSTRAINT doctor_speciality_unique
+        UNIQUE (doctor_id, speciality_id)
 );
 
--- Example data
-INSERT INTO doctor_specialties (
+INSERT INTO doctor_speciality (
     doctor_id,
-    specialty_id
+    speciality_id
 ) VALUES
-    (0, 0),
     (1, 1),
     (2, 2),
     (3, 3),
     (4, 4),
     (5, 5),
     (6, 6),
-    (1, 6),
-    (2, 1);
+    (7, 7),
+    (2, 6),
+    (3, 2);
 
 COMMIT;

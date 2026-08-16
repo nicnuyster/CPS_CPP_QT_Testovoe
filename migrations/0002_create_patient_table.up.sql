@@ -1,6 +1,6 @@
 BEGIN;
 
-CREATE TABLE patients (
+CREATE TABLE patient (
     id             SERIAL PRIMARY KEY,
 
     first_name     VARCHAR(30) NOT NULL,
@@ -14,17 +14,17 @@ CREATE TABLE patients (
     sex            CHAR(1) NOT NULL,
     date_of_birth  DATE NOT NULL,
 
-    snils          VARCHAR(11) UNIQUE NOT NULL,
+    snils          VARCHAR(14) UNIQUE NOT NULL,
     polis          VARCHAR(16) UNIQUE NOT NULL,
 
     created_at     TIMESTAMPTZ DEFAULT NOW(),
     updated_at     TIMESTAMPTZ DEFAULT NOW(),
 
     CONSTRAINT patients_sex_check
-        CHECK (sex IN ('M', 'F'))
+        CHECK (sex IN ('M', 'Ж'))
 );
 
-INSERT INTO patients (
+INSERT INTO patient (
     first_name,
     family_name,
     father_name,
@@ -85,7 +85,7 @@ INSERT INTO patients (
         'Лорд Винтерфелла',
         'Средневековое образование',
         'M',
-        '0263-01-01',
+        '2001-01-01',
         '444-444-444 44',
         '4444444444444444'
     ),
@@ -98,7 +98,7 @@ INSERT INTO patients (
         'Контрабандист',
         'Самообразование',
         'M',
-        '0032-01-01',
+        '2001-01-01',
         '555-555-555 55',
         '5555555555555555'
     ),

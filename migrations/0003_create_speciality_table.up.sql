@@ -1,15 +1,15 @@
 BEGIN;
 
-CREATE TABLE specialties (
+CREATE TABLE speciality (
     id                   SERIAL PRIMARY KEY,
     name                 VARCHAR(30) UNIQUE NOT NULL,
     time_in_appointment  INTEGER NOT NULL,
 
-    CONSTRAINT specialties_appointment_time_check
+    CONSTRAINT speciality_appointments_time_check
         CHECK (time_in_appointment > 0)
 );
 
-INSERT INTO specialties (
+INSERT INTO speciality (
     name,
     time_in_appointment
 ) VALUES

@@ -1,6 +1,6 @@
 BEGIN;
 
-CREATE TABLE people (
+CREATE TABLE doctor (
     id           SERIAL PRIMARY KEY,
     first_name   VARCHAR(30) NOT NULL,
     family_name  VARCHAR(30) NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE people (
     updated_at   TIMESTAMPTZ DEFAULT NOW()
 );
 
-INSERT INTO people (
+INSERT INTO doctor (
     first_name,
     family_name,
     father_name,
