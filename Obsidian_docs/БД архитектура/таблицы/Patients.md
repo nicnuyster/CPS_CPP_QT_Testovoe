@@ -1,3 +1,4 @@
+```sql
 id SERIAL PRIMARY KEY,
 
 first_name VARCHAR(30) NOT NULL,
@@ -17,6 +18,7 @@ POLIS VARCHAR(16) NOT NULL UNIQUE,
 
 created_at TIMESTAMPTZ NOT NULL DEFAULT(now),
 updated_at TIMESTAMPTZ NOT NULL DEFAULT(now)
+```
 
 | id  | Фамилия | Имя | Отчество | Адрес | Телефон | Работа | Учеба | Пол | Дата рождения | Снилс | Полис |
 | --- | ------- | --- | -------- | ----- | ------- | ------ | ----- | --- | ------------- | ----- | ----- |

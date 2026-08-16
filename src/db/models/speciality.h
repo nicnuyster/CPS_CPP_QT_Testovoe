@@ -9,6 +9,4 @@ struct Speciality {
     int time_in_appointment = 0;        // minutes, CHECK > 0
 };
 
-// Q_DECLARE_METATYPE(Specialty)
-
 #endif // SPECIALITY_H

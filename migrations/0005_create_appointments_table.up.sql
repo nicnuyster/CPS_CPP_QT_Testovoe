@@ -30,13 +30,15 @@ CREATE TABLE appointments (
         ON DELETE CASCADE
 );
 
--- Example data
---INSERT INTO appointments (
---    patient_id,
---    doctor_id,
---    doctor_specialty_id,
---    start_datetime,
---    status
---)
+-- Основные FK-индексы (ускоряют JOIN)
+CREATE INDEX idx_appointments_patient ON appointments(patient_id);
+CREATE INDEX idx_appointments_doctor ON appointments(doctor_id);
+CREATE INDEX idx_appointments_doctor_speciality ON appointments(doctor_speciality_id);
+
+-- Расписание врача: приёмы по дате
+CREATE INDEX idx_appointments_doctor_datetime ON appointments(doctor_id, start_datetime);
+
+-- История пациента: приёмы по дате
+CREATE INDEX idx_appointments_patient_datetime ON appointments(patient_id, start_datetime);
 
 COMMIT;

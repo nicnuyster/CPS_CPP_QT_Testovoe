@@ -1,3 +1,4 @@
+```sql
 id SERIAL PRIMARY KEY,
 
 patient_id INTEGER NOT NULL REFERENCES patient(id) ON DELETE CASCADE,
@@ -8,6 +9,7 @@ status VARCHAR NOT NULL DEFAULT 'Подтверждена' CHECK (status in ('П
 
 created_at           TIMESTAMPTZ NOT NULL DEFAULT now(),
 updated_at           TIMESTAMPTZ NOT NULL DEFAULT now()
+```
 
 | id  | id врача | id пациента | время |
 | --- | -------- | ----------- | ----- |

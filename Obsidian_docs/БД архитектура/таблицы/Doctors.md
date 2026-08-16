@@ -1,3 +1,4 @@
+```sql
 id SERIAL PRIMARY KEY,
 
 first_name VARCHAR(30) NOT NULL,
@@ -7,13 +8,9 @@ phone VARCHAR(20),
 
 created_at TIMESTAMPTZ NOT NULL DEFAULT(now),
 updated_at TIMESTAMPTZ NOT NULL DEFAULT(now),
+```
 
-| id  | Фамилия  | Имя | Отчество | телефон      |
-| --- | -------- | --- | -------- | ------------ |
-| 1   | Санчез   | Рик |          | +19998887766 |
-| 2   | Доктор   | кто | -        |              |
-| 3   | Йенифер  |     |          |              |
-| 4   | Астарион |     |          |              |
-| 5   |          |     |          |              |
-| 6   |          |     |          |              |
-| 7   |          |     |          |              |
+| id  | Фамилия | Имя | Отчество | телефон |
+| --- | ------- | --- | -------- | ------- |
+| 1   |         |     |          |         |
+

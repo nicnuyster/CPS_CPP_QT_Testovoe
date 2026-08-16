@@ -25,16 +25,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "БД архитектура/таблицы/doctor_specialty.md",
+                "file": "QT + vscode.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "doctor_specialty"
+              "title": "QT + vscode"
+            }
+          },
+          {
+            "id": "9dd59bdd131713e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "QT архитектура/bd/models.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "models"
+            }
+          },
+          {
+            "id": "47a5625f5454da40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "QT архитектура/QT архитектура.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "QT архитектура"
+            }
+          },
+          {
+            "id": "e455a8c706028b3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "БД архитектура/таблицы/Индексы.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Индексы"
+            }
+          },
+          {
+            "id": "fdd33048a3e5f6e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Задание.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Задание"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -201,26 +257,31 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "ff47d1ab46ea21a2",
+  "active": "fdd33048a3e5f6e1",
   "lastOpenFiles": [
-    "Без названия.md",
+    "QT + vscode.md",
     "Задание.md",
-    "БД архитектура/таблицы/Specialty.md",
-    "БД архитектура/таблицы/Patients.md",
+    "QT архитектура/bd/models.md",
+    "БД архитектура/таблицы/Индексы.md",
+    "БД архитектура/БД.md",
+    "QT архитектура/bd/application.md",
+    "QT архитектура/bd/embeddingdb.md",
+    "QT архитектура/bd/services.md",
+    "QT архитектура/bd/repos.md",
+    "БД архитектура/Нормальные формы.md",
+    "QT архитектура/QT архитектура.md",
+    "БД архитектура/таблицы/Appointments.md",
     "БД архитектура/таблицы/doctor_specialty.md",
     "БД архитектура/таблицы/Doctors.md",
+    "БД архитектура/таблицы/Patients.md",
+    "БД архитектура/таблицы/Specialty.md",
+    "БД архитектура/бд/BD launch.md",
     "БД архитектура/бд/trigger_func.md",
-    "БД архитектура/БД.md",
-    "БД архитектура/таблицы/Appointments.md",
-    "QT архитектура/QT архитектура.md",
-    "QT архитектура/bd/embeddingdb.md",
     "LLM.md",
-    "QT архитектура/bd/models.md",
     "QT архитектура/bd",
     "БД архитектура/таблицы/tables.md",
     "БД архитектура/бд/indexing.md",
     "БД архитектура/бд",
-    "БД архитектура/бд/BD launch.md",
     "БД архитектура/таблицы",
     "General архитектура.md",
     "TechStack.md",

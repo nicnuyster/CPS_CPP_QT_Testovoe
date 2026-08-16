@@ -133,7 +133,25 @@ bool AppExmpl::seedAppointments(QString &errorMessage) const
         return false;
     }
 
-    qDebug() << "AppExmpl: created" << createdCount << "out of 5 appointments.";
+    if (createdCount > 0) {
+        Appointments appt;
+        appt.patient_id          = patients.at(4 % patients.size()).id;
+        appt.doctor_id           = doctor.at(4 % doctor.size()).id;
+        appt.doctor_speciality_id = doctorSpeciality.at(4 % doctorSpeciality.size()).id;
+        appt.start_datetime      = QDateTime(baseDate.addDays(4), startTime);
+        appt.status              = TableEnums::AppointmentStatus::Confirmed;
+
+        int outId = 0;
+        QString apptError;
+        if (!service.createAppointment(appt, outId, apptError)) {
+            qWarning() << "AppExmpl: appointment" << (4 + 1) << "failed:" << apptError;
+        } else {
+            ++createdCount;
+            qDebug() << "AppExmpl: created appointment id=" << outId;
+        }        
+    }
+
+    qDebug() << "AppExmpl: created" << createdCount << "out of 6 appointments.";
     errorMessage.clear();
     return true;
 }

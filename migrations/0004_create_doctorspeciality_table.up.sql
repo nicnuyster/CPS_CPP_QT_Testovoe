@@ -33,4 +33,6 @@ INSERT INTO doctor_speciality (
     (2, 6),
     (3, 2);
 
+CREATE INDEX idx_doctorspeciality_speciality ON doctor_speciality(speciality_id);
+
 COMMIT;

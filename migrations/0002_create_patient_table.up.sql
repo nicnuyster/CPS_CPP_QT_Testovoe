@@ -129,4 +129,6 @@ INSERT INTO patient (
         '7777777777777777'
     );
 
+CREATE INDEX idx_patient_names ON patient(family_name, first_name, father_name);
+
 COMMIT;

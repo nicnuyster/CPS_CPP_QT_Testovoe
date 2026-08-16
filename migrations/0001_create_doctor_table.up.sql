@@ -24,4 +24,6 @@ INSERT INTO doctor (
     ('Хьюберт', 'Фарнсворт', NULL, '+1-555-0106'),
     ('Джойс', 'Байерс', NULL, '+1-555-0107');
 
+CREATE INDEX idx_doctor_names ON doctor(family_name, first_name, father_name);
+
 COMMIT;
